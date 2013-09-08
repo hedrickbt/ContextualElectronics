@@ -1,0 +1,19 @@
+Conceptual Electronics : Module 2 : Design Constraints : Task
+9.2.2013
+
+Task : List 5 design constraints:
+
+1.  Size : Has to be at least as big as an Arduino
+2.  Size : May not want to "overflow" the Arduino too much
+3.  Will have to allow time for programming in AVRC or Processing
+4.  10 weeks total time including learning time
+5.  Will use Kicad
+	
+Extra
+Do we have a cost limit?
+
+From Execution Video
+hand-solderable components
+Have to be able to find the components
+Low lead time components
+No through hole?!!
