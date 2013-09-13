@@ -44,8 +44,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6200 2800 2    60   Input ~ 0
+Text HLabel 6950 5650 2    60   Input ~ 0
 TC_IN+
-Text HLabel 6250 3350 2    60   Input ~ 0
+Text HLabel 7000 6200 2    60   Input ~ 0
 TC_IN-
 $EndSCHEMATC

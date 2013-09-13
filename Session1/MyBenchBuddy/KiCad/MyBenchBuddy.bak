@@ -55,6 +55,8 @@ S 8100 4000 1700 1100
 U 52313F7C
 F0 "Thermocouple" 50
 F1 "Thermocouple.sch" 50
+F2 "TC_IN+" I R 9800 4300 60 
+F3 "TC_IN-" I R 9800 4650 60 
 $EndSheet
 $Sheet
 S 8100 5400 1650 900 
