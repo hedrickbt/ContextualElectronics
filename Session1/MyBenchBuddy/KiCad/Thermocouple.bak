@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:bth-switch
 LIBS:MyBenchBuddy-cache
 EELAYER 24 0
 EELAYER END

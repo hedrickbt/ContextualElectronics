@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:bth-switch
 LIBS:MyBenchBuddy-cache
 EELAYER 24 0
 EELAYER END
@@ -73,16 +74,6 @@ F6 "SCLK" I L 8100 4600 60
 F7 "CS_N" I L 8100 4800 60 
 $EndSheet
 $Sheet
-S 8100 5400 1650 900 
-U 52313F9A
-F0 "Relay" 50
-F1 "Relay.sch" 50
-F2 "DIN+" I L 8100 5600 60 
-F3 "DIN-" O L 8100 5800 60 
-F4 "Relay+" I R 9750 5600 60 
-F5 "Relay-" O R 9750 5800 60 
-$EndSheet
-$Sheet
 S 1250 1400 1650 1200
 U 52313FDA
 F0 "Power" 50
@@ -120,5 +111,16 @@ S 10050 1000 500  5300
 U 5231411D
 F0 "TerminalBlock" 50
 F1 "TerminalBlock.sch" 50
+$EndSheet
+$Sheet
+S 8100 5400 1650 900 
+U 52313F9A
+F0 "Relay" 50
+F1 "Relay.sch" 50
+F2 "DIN+" I L 8100 5600 60 
+F3 "DIN-" O L 8100 5800 60 
+F4 "NC" B R 9750 5800 60 
+F5 "NO" B R 9750 6000 60 
+F6 "COM" B R 9750 5600 60 
 $EndSheet
 $EndSCHEMATC
