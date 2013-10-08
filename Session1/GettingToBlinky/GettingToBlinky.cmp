@@ -1,0 +1,52 @@
+Cmp-Mod V01 Created by CvPcb (2013-08-23 BZR 4296)-product date = 10/7/2013 10:44:20 PM
+
+BeginCmp
+TimeStamp = /524F7F11;
+Reference = BT1;
+ValeurCmp = CR2032;
+IdModule  = CR2032_BK-913;
+EndCmp
+
+BeginCmp
+TimeStamp = /524F7B7F;
+Reference = C1;
+ValeurCmp = 1U;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /524F7C83;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /524F7B6B;
+Reference = R1;
+ValeurCmp = 470K;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /524F7C65;
+Reference = R2;
+ValeurCmp = 1K;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /524F7B43;
+Reference = U1;
+ValeurCmp = 7555;
+IdModule  = SO8N;
+EndCmp
+
+BeginCmp
+TimeStamp = /524F7B57;
+Reference = VR1;
+ValeurCmp = LDR;
+IdModule  = R1;
+EndCmp
+
+EndListe

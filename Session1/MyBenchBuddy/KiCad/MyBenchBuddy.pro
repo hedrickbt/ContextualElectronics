@@ -1,4 +1,4 @@
-update=9/27/2013 11:30:10 PM
+update=10/2/2013 9:29:22 PM
 version=1
 last_client=eeschema
 [cvpcb]
@@ -88,3 +88,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=bth-switch
+LibName32=bth-ic

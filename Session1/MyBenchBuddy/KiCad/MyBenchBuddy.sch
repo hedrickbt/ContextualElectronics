@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:bth-switch
+LIBS:bth-ic
 LIBS:MyBenchBuddy-cache
 EELAYER 24 0
 EELAYER END
@@ -82,15 +83,6 @@ F2 "Power" O R 2900 1800 60
 F3 "Ground" O R 2900 2250 60 
 $EndSheet
 $Sheet
-S 8100 2450 1700 1150
-U 52314095
-F0 "LED_Driver" 50
-F1 "LED_Driver.sch" 50
-F2 "EN" I L 8100 2650 60 
-F3 "FREQ" I L 8100 2850 60 
-F4 "String+" O R 9800 2650 60 
-$EndSheet
-$Sheet
 S 8100 900  1700 1300
 U 523140DA
 F0 "Fan" 50
@@ -122,5 +114,14 @@ F3 "DIN-" O L 8100 5800 60
 F4 "NC" B R 9750 5800 60 
 F5 "NO" B R 9750 6000 60 
 F6 "COM" B R 9750 5600 60 
+$EndSheet
+$Sheet
+S 8100 2450 1700 1150
+U 52314095
+F0 "LED_Driver" 50
+F1 "LED_Driver.sch" 50
+F2 "String+" O R 9800 2650 60 
+F3 "LED_EN_PWM" I L 8100 2800 60 
+F4 "String-" I R 9800 2900 60 
 $EndSheet
 $EndSCHEMATC
