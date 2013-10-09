@@ -31,12 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:bth-switch
 LIBS:bth-ic
+LIBS:bth-power
 LIBS:MyBenchBuddy-cache
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -75,12 +76,12 @@ F6 "SCLK" I L 8100 4600 60
 F7 "CS_N" I L 8100 4800 60 
 $EndSheet
 $Sheet
-S 1250 1400 1650 1200
+S 650  650  1900 1500
 U 52313FDA
 F0 "Power" 50
 F1 "Power.sch" 50
-F2 "Power" O R 2900 1800 60 
-F3 "Ground" O R 2900 2250 60 
+F2 "Power" O R 2550 1050 60 
+F3 "Ground" O R 2550 1500 60 
 $EndSheet
 $Sheet
 S 8100 900  1700 1300
@@ -123,5 +124,11 @@ F1 "LED_Driver.sch" 50
 F2 "String+" O R 9800 2650 60 
 F3 "LED_EN_PWM" I L 8100 2800 60 
 F4 "String-" I R 9800 2900 60 
+$EndSheet
+$Sheet
+S 5200 900  2250 1500
+U 52549705
+F0 "PowerAdjustmentMonitor" 50
+F1 "PowerAdjustmentMonitor.sch" 50
 $EndSheet
 $EndSCHEMATC

@@ -31,12 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:bth-switch
 LIBS:bth-ic
+LIBS:bth-power
 LIBS:MyBenchBuddy-cache
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
