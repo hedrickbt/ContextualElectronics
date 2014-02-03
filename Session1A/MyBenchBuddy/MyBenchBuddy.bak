@@ -55,8 +55,6 @@ S 7550 4200 1750 1150
 U 52EF370C
 F0 "Thermocouple" 50
 F1 "Thermocouple.sch" 50
-F2 "TC IN +" I R 9300 4450 60 
-F3 "TC IN -" I R 9300 4650 60 
 $EndSheet
 $Sheet
 S 7550 5600 1700 1250
