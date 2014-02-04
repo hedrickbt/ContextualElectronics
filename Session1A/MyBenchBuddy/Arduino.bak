@@ -34,9 +34,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 2 8
 Title ""
-Date "3 feb 2014"
+Date "4 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,4 +44,24 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 7650 4750 0    60   Output ~ 0
+Relay+
+Text HLabel 7650 5000 0    60   Input ~ 0
+Relay-
+Text HLabel 7300 3100 0    60   Output ~ 0
+MOSI
+Text HLabel 7300 3350 0    60   Input ~ 0
+MISO
+Text HLabel 7250 3600 0    60   Output ~ 0
+SCLK
+Text HLabel 7250 3800 0    60   Output ~ 0
+CS_N
+Text HLabel 7300 2400 0    60   Output ~ 0
+LED_EN
+Text HLabel 7300 2600 0    60   Output ~ 0
+LED_FREQ
+Text HLabel 7300 1350 0    60   Output ~ 0
+FAN_EN
+Text HLabel 7300 1500 0    60   Input ~ 0
+TACH_MEAS
 $EndSCHEMATC
