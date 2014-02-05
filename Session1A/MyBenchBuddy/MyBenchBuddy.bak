@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
 Title ""
-Date "4 feb 2014"
+Date "5 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -55,6 +55,10 @@ F4 "MOSI" O R 3650 5600 60
 F5 "MISO" I R 3650 5750 60 
 F6 "SCLK" O R 3650 5900 60 
 F7 "CS_N" O R 3650 6050 60 
+F8 "LED_EN" O R 3650 5000 60 
+F9 "LED_FREQ" O R 3650 5150 60 
+F10 "FAN_EN" O R 3650 4500 60 
+F11 "TACH_MEAS" I R 3650 4650 60 
 $EndSheet
 $Sheet
 S 7550 4200 1750 1150
