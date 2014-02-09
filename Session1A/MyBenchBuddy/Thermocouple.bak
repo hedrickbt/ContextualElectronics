@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 8
 Title ""
-Date "5 feb 2014"
+Date "9 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -433,4 +433,6 @@ Text Notes 10150 3100 0    60   ~ 0
 Analog/TC Input\n
 Text Notes 7050 1200 0    60   ~ 0
 Instrumentation Amp
+Text Notes 1800 2500 0    60   ~ 0
+16-24bit ADC
 $EndSCHEMATC
