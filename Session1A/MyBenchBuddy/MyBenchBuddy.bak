@@ -30,14 +30,15 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:bth-switch
+LIBS:bth-power
 LIBS:MyBenchBuddy-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
-Date "9 feb 2014"
+Date "11 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -120,5 +121,11 @@ S 10050 1700 800  5000
 U 52EF37F6
 F0 "TerminalBlock" 50
 F1 "TerminalBlock.sch" 50
+$EndSheet
+$Sheet
+S 3850 900  2350 1300
+U 52F9B182
+F0 "PowerAdjustmentMonitor" 50
+F1 "PowerAdjustmentMonitor.sch" 50
 $EndSheet
 $EndSCHEMATC
