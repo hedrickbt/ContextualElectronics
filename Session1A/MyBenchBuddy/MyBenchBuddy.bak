@@ -31,6 +31,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:bth-switch
 LIBS:bth-power
+LIBS:bth-transistor
+LIBS:bth-converter
 LIBS:MyBenchBuddy-cache
 EELAYER 27 0
 EELAYER END
@@ -123,17 +125,17 @@ F0 "TerminalBlock" 50
 F1 "TerminalBlock.sch" 50
 $EndSheet
 $Sheet
-S 7550 750  1750 1300
+S 7550 1250 1750 850 
 U 52F9B182
 F0 "PowerAdjustmentMonitor" 50
 F1 "PowerAdjustmentMonitor.sch" 50
-F2 "V+_ADJ" O R 9300 900 60 
-F3 "V-_ADJ" O R 9300 1050 60 
-F4 "3V3_MON" O L 7550 950 60 
-F5 "5V_MON" O L 7550 850 60 
-F6 "V+_ADJ_MON" O L 7550 1750 60 
-F7 "V-_ADJ_MON" O L 7550 1850 60 
-F8 "V+_CURR_MON" O L 7550 1350 60 
-F9 "V-_CURR_MON" O L 7550 1450 60 
+F2 "V+_ADJ" O R 9300 1350 60 
+F3 "V-_ADJ" O R 9300 1450 60 
+F4 "3V3_MON" O L 7550 1450 60 
+F5 "5V_MON" O L 7550 1350 60 
+F6 "V+_ADJ_MON" O L 7550 1900 60 
+F7 "V-_ADJ_MON" O L 7550 2000 60 
+F8 "V+_CURR_MON" O L 7550 1650 60 
+F9 "V-_CURR_MON" O L 7550 1750 60 
 $EndSheet
 $EndSCHEMATC

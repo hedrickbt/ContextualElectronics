@@ -1,4 +1,4 @@
-update=2/10/2014 11:29:18 PM
+update=2/13/2014 3:10:00 PM
 version=1
 last_client=eeschema
 [cvpcb]
@@ -86,3 +86,5 @@ LibName29=contrib
 LibName30=valves
 LibName31=bth-switch
 LibName32=bth-power
+LibName33=bth-transistor
+LibName34=bth-converter

@@ -31,6 +31,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:bth-switch
 LIBS:bth-power
+LIBS:bth-transistor
+LIBS:bth-converter
 LIBS:MyBenchBuddy-cache
 EELAYER 27 0
 EELAYER END
