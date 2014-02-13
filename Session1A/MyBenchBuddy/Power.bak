@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title ""
-Date "11 feb 2014"
+Date "12 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -330,7 +330,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 3500 7850 3650
 Wire Wire Line
-	7850 3650 7500 3650
+	7500 3650 8600 3650
 Wire Wire Line
 	7850 3100 7850 3000
 Wire Wire Line
@@ -359,5 +359,19 @@ F 2 "" H 8600 2350 60  0000 C CNN
 F 3 "" H 8600 2350 60  0000 C CNN
 	1    8600 2350
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3650 8600 3850
+Connection ~ 7850 3650
+$Comp
+L -12V #PWR?
+U 1 1 52F9D8BC
+P 8600 3850
+F 0 "#PWR?" H 8600 3980 20  0001 C CNN
+F 1 "-12V" H 8600 3950 30  0000 C CNN
+F 2 "" H 8600 3850 60  0000 C CNN
+F 3 "" H 8600 3850 60  0000 C CNN
+	1    8600 3850
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
