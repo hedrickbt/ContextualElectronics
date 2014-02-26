@@ -33,14 +33,15 @@ LIBS:bth-switch
 LIBS:bth-power
 LIBS:bth-transistor
 LIBS:bth-converter
+LIBS:bth-ic
 LIBS:MyBenchBuddy-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 8 9
 Title ""
-Date "13 feb 2014"
+Date "26 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -48,24 +49,249 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7650 4750 0    60   Output ~ 0
-Relay+
-Text HLabel 7650 5000 0    60   Input ~ 0
-Relay-
-Text HLabel 7300 3100 0    60   Output ~ 0
+Text HLabel 6200 5150 2    60   Output ~ 0
+RELAY+
+Text HLabel 8150 5350 2    60   Output ~ 0
+RELAY-
+Text HLabel 6200 3000 2    60   Output ~ 0
 MOSI
-Text HLabel 7300 3350 0    60   Input ~ 0
+Text HLabel 6200 2800 2    60   Input ~ 0
 MISO
-Text HLabel 7250 3600 0    60   Output ~ 0
+Text HLabel 6200 2600 2    60   Output ~ 0
 SCLK
-Text HLabel 7250 3800 0    60   Output ~ 0
-CS_N
-Text HLabel 7300 2400 0    60   Output ~ 0
-LED_EN
-Text HLabel 7300 2600 0    60   Output ~ 0
-LED_FREQ
-Text HLabel 7300 1350 0    60   Output ~ 0
-FAN_EN
-Text HLabel 7300 1500 0    60   Input ~ 0
+Text HLabel 6200 3200 2    60   Output ~ 0
+DAC_CS_N
+Text HLabel 6200 5350 2    60   Output ~ 0
+FAN_EN_N
+Text HLabel 2650 4950 0    60   Input ~ 0
 TACH_MEAS
+$Comp
+L ARDUINOPINS ARD?
+U 1 1 530D49AA
+P 4450 3650
+F 0 "ARD?" H 3950 4300 60  0000 C CNN
+F 1 "ARDUINOPINS" H 4150 4450 60  0000 C CNN
+F 2 "~" H 2500 3700 60  0000 C CNN
+F 3 "~" H 2500 3700 60  0000 C CNN
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 2650 4750 0    60   Input ~ 0
+CURR_MEAS
+$Comp
+L R R?
+U 1 1 530D57E6
+P 5750 5350
+F 0 "R?" V 5830 5350 40  0000 C CNN
+F 1 "R" V 5757 5351 40  0000 C CNN
+F 2 "~" V 5680 5350 30  0000 C CNN
+F 3 "~" H 5750 5350 30  0000 C CNN
+	1    5750 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 5350 5300 5350
+Wire Wire Line
+	6000 5350 6200 5350
+$Comp
+L R R?
+U 1 1 530D6336
+P 5750 5150
+F 0 "R?" V 5830 5150 40  0000 C CNN
+F 1 "R" V 5757 5151 40  0000 C CNN
+F 2 "~" V 5680 5150 30  0000 C CNN
+F 3 "~" H 5750 5150 30  0000 C CNN
+	1    5750 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 5150 5500 5150
+Wire Wire Line
+	6000 5150 6200 5150
+Wire Wire Line
+	7300 5350 7300 5650
+$Comp
+L GND #PWR?
+U 1 1 530D5D7E
+P 7300 5650
+F 0 "#PWR?" H 7300 5650 30  0001 C CNN
+F 1 "GND" H 7300 5580 30  0001 C CNN
+F 2 "" H 7300 5650 60  0000 C CNN
+F 3 "" H 7300 5650 60  0000 C CNN
+	1    7300 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 530D5FDE
+P 3150 4750
+F 0 "R?" V 3230 4750 40  0000 C CNN
+F 1 "R" V 3157 4751 40  0000 C CNN
+F 2 "~" V 3080 4750 30  0000 C CNN
+F 3 "~" H 3150 4750 30  0000 C CNN
+	1    3150 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 530D5FEB
+P 3150 4950
+F 0 "R?" V 3230 4950 40  0000 C CNN
+F 1 "R" V 3157 4951 40  0000 C CNN
+F 2 "~" V 3080 4950 30  0000 C CNN
+F 3 "~" H 3150 4950 30  0000 C CNN
+	1    3150 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 4750 2650 4750
+Wire Wire Line
+	2900 4950 2650 4950
+Wire Wire Line
+	3400 4950 3650 4950
+Wire Wire Line
+	3400 4750 3650 4750
+Text HLabel 2650 4350 0    60   Input ~ 0
+V+_ADJ_MON
+Text HLabel 2650 4550 0    60   Input ~ 0
+V-_ADJ_MON
+$Comp
+L R R?
+U 1 1 530D6D63
+P 3150 4550
+F 0 "R?" V 3230 4550 40  0000 C CNN
+F 1 "R" V 3157 4551 40  0000 C CNN
+F 2 "~" V 3080 4550 30  0000 C CNN
+F 3 "~" H 3150 4550 30  0000 C CNN
+	1    3150 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 530D6D69
+P 3150 4350
+F 0 "R?" V 3230 4350 40  0000 C CNN
+F 1 "R" V 3157 4351 40  0000 C CNN
+F 2 "~" V 3080 4350 30  0000 C CNN
+F 3 "~" H 3150 4350 30  0000 C CNN
+	1    3150 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 4350 2650 4350
+Wire Wire Line
+	2650 4550 2900 4550
+Wire Wire Line
+	3400 4550 3650 4550
+Wire Wire Line
+	3650 4350 3400 4350
+$Comp
+L R R?
+U 1 1 530D6FFE
+P 5750 3200
+F 0 "R?" V 5830 3200 40  0000 C CNN
+F 1 "R" V 5757 3201 40  0000 C CNN
+F 2 "~" V 5680 3200 30  0000 C CNN
+F 3 "~" H 5750 3200 30  0000 C CNN
+	1    5750 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 530D7004
+P 5750 3000
+F 0 "R?" V 5830 3000 40  0000 C CNN
+F 1 "R" V 5757 3001 40  0000 C CNN
+F 2 "~" V 5680 3000 30  0000 C CNN
+F 3 "~" H 5750 3000 30  0000 C CNN
+	1    5750 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 530D700A
+P 5750 2800
+F 0 "R?" V 5830 2800 40  0000 C CNN
+F 1 "R" V 5757 2801 40  0000 C CNN
+F 2 "~" V 5680 2800 30  0000 C CNN
+F 3 "~" H 5750 2800 30  0000 C CNN
+	1    5750 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 530D7010
+P 5750 2600
+F 0 "R?" V 5830 2600 40  0000 C CNN
+F 1 "R" V 5757 2601 40  0000 C CNN
+F 2 "~" V 5680 2600 30  0000 C CNN
+F 3 "~" H 5750 2600 30  0000 C CNN
+	1    5750 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 2600 5300 2600
+Wire Wire Line
+	5300 2800 5500 2800
+Wire Wire Line
+	5500 3000 5300 3000
+Wire Wire Line
+	5300 3200 5500 3200
+Wire Wire Line
+	6000 3200 6200 3200
+Wire Wire Line
+	6200 3000 6000 3000
+Wire Wire Line
+	6000 2800 6200 2800
+Wire Wire Line
+	6200 2600 6000 2600
+$Comp
+L R R?
+U 1 1 530D72F3
+P 7750 5350
+F 0 "R?" V 7830 5350 40  0000 C CNN
+F 1 "R" V 7757 5351 40  0000 C CNN
+F 2 "~" V 7680 5350 30  0000 C CNN
+F 3 "~" H 7750 5350 30  0000 C CNN
+	1    7750 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 5350 7300 5350
+Wire Wire Line
+	8000 5350 8150 5350
+Text HLabel 6200 3400 2    60   Output ~ 0
+LED_EN_PWM
+$Comp
+L R R?
+U 1 1 530D77C7
+P 5750 3400
+F 0 "R?" V 5830 3400 40  0000 C CNN
+F 1 "R" V 5757 3401 40  0000 C CNN
+F 2 "~" V 5680 3400 30  0000 C CNN
+F 3 "~" H 5750 3400 30  0000 C CNN
+	1    5750 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 3400 5300 3400
+Wire Wire Line
+	6000 3400 6200 3400
+Text HLabel 6200 3600 2    60   Output ~ 0
+ADC_CS_N
+$Comp
+L R R?
+U 1 1 530DC972
+P 5750 3600
+F 0 "R?" V 5830 3600 40  0000 C CNN
+F 1 "R" V 5757 3601 40  0000 C CNN
+F 2 "~" V 5680 3600 30  0000 C CNN
+F 3 "~" H 5750 3600 30  0000 C CNN
+	1    5750 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 3600 5300 3600
+Wire Wire Line
+	6000 3600 6200 3600
 $EndSCHEMATC

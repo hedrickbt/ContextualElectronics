@@ -33,6 +33,7 @@ LIBS:bth-switch
 LIBS:bth-power
 LIBS:bth-transistor
 LIBS:bth-converter
+LIBS:bth-ic
 LIBS:MyBenchBuddy-cache
 EELAYER 27 0
 EELAYER END
@@ -40,7 +41,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title ""
-Date "13 feb 2014"
+Date "26 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -49,9 +50,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 10500 1850 2    60   Output ~ 0
-String+
-Text HLabel 10500 3300 2    60   Input ~ 0
-String-
+LED_STRING+
+Text HLabel 10500 3300 2    60   Output ~ 0
+LED_STRING-
 $Comp
 L AP5726 U?
 U 1 1 52FD3BA3

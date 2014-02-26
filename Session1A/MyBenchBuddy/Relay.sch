@@ -33,6 +33,7 @@ LIBS:bth-switch
 LIBS:bth-power
 LIBS:bth-transistor
 LIBS:bth-converter
+LIBS:bth-ic
 LIBS:MyBenchBuddy-cache
 EELAYER 27 0
 EELAYER END
@@ -40,7 +41,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
 Title ""
-Date "13 feb 2014"
+Date "26 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -49,13 +50,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 2750 2700 0    60   Input ~ 0
-DIN+
+RELAY+
 Text HLabel 2750 3050 0    60   Output ~ 0
-DIN-
+RELAY-
 Text HLabel 9100 2150 2    60   BiDi ~ 0
-NC
+RELAY_NC
 Text HLabel 9100 2350 2    60   BiDi ~ 0
-NO
+RELAY_NO
 $Comp
 L PHTRANS U?
 U 1 1 52F70E12
@@ -112,7 +113,7 @@ F 3 "" H 8200 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 9100 1750 2    60   BiDi ~ 0
-COM
+RELAY_COM
 Wire Wire Line
 	9100 2150 8600 2150
 Wire Wire Line

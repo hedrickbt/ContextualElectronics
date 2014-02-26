@@ -33,14 +33,15 @@ LIBS:bth-switch
 LIBS:bth-power
 LIBS:bth-transistor
 LIBS:bth-converter
+LIBS:bth-ic
 LIBS:MyBenchBuddy-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 9 9
 Title ""
-Date "13 feb 2014"
+Date "26 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -48,16 +49,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6850 2400 0    60   Output ~ 0
-Power+
-Text HLabel 6850 2650 0    60   Input ~ 0
-Power-
-Text HLabel 6850 2850 0    60   Input ~ 0
-Tach
-Text HLabel 1000 4300 0    60   Output ~ 0
-Tach_out
-Text HLabel 850  2800 0    60   Input ~ 0
-Fan_In
+Text HLabel 6850 2400 2    60   Output ~ 0
+FAN_OUT+
+Text HLabel 6850 2650 2    60   Output ~ 0
+FAN_OUT-
+Text HLabel 6850 2850 2    60   Input ~ 0
+TACH_IN
+Text HLabel 1100 4300 0    60   Output ~ 0
+TACH_MEAS
+Text HLabel 1000 2850 0    60   Input ~ 0
+FAN_EN_N
 $Comp
 L LM324 U?
 U 1 1 52F6DE8C
@@ -214,20 +215,18 @@ Wire Wire Line
 $Comp
 L MCP4922-E/P U?
 U 1 1 52F6E23B
-P 1500 1950
-F 0 "U?" H 1650 2350 40  0000 L BNN
-F 1 "MCP4922-E/P" H 1650 2300 40  0000 L BNN
-F 2 "DIP14" H 1500 1950 30  0000 C CIN
-F 3 "" H 1500 1950 60  0000 C CNN
-	1    1500 1950
+P 1600 1950
+F 0 "U?" H 1750 2350 40  0000 L BNN
+F 1 "MCP4922-E/P" H 1750 2300 40  0000 L BNN
+F 2 "DIP14" H 1600 1950 30  0000 C CIN
+F 3 "" H 1600 1950 60  0000 C CNN
+	1    1600 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 2850 6850 4300
-Wire Wire Line
-	6850 4300 1000 4300
+	6750 4300 1100 4300
 Text HLabel 1300 3000 0    60   Output ~ 0
-Current Measure
+CURR_MEAS
 Wire Wire Line
 	5600 3000 1300 3000
 Connection ~ 5600 3000
@@ -246,24 +245,22 @@ Wire Wire Line
 	3050 1850 3050 1700
 Connection ~ 3050 1700
 Wire Wire Line
-	3050 2350 3050 2800
-Wire Wire Line
-	3050 2800 850  2800
+	3050 2850 3050 2350
 $Comp
 L R R?
 U 1 1 52F6E630
-P 2400 1800
-F 0 "R?" V 2480 1800 40  0000 C CNN
-F 1 "R" V 2407 1801 40  0000 C CNN
-F 2 "~" V 2330 1800 30  0000 C CNN
-F 3 "~" H 2400 1800 30  0000 C CNN
-	1    2400 1800
+P 2450 1800
+F 0 "R?" V 2530 1800 40  0000 C CNN
+F 1 "R" V 2457 1801 40  0000 C CNN
+F 2 "~" V 2380 1800 30  0000 C CNN
+F 3 "~" H 2450 1800 30  0000 C CNN
+	1    2450 1800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2150 1800 2050 1800
+	2200 1800 2150 1800
 Wire Wire Line
-	2650 1800 2750 1800
+	2700 1800 2750 1800
 Connection ~ 2750 1800
 Text HLabel 800  1750 0    60   Input ~ 0
 MOSI
@@ -274,25 +271,31 @@ CS_N
 Text HLabel 800  1850 0    60   Input ~ 0
 SCLK
 Wire Wire Line
-	950  1750 800  1750
+	1050 1750 800  1750
 Wire Wire Line
-	950  1850 800  1850
+	1050 1850 800  1850
 Wire Wire Line
-	950  1950 800  1950
+	1050 1950 800  1950
 $Comp
 L R R?
 U 1 1 52F6E833
-P 950 2450
-F 0 "R?" V 1030 2450 40  0000 C CNN
-F 1 "R" V 957 2451 40  0000 C CNN
-F 2 "~" V 880 2450 30  0000 C CNN
-F 3 "~" H 950 2450 30  0000 C CNN
-	1    950  2450
+P 1050 2450
+F 0 "R?" V 1130 2450 40  0000 C CNN
+F 1 "R" V 1057 2451 40  0000 C CNN
+F 2 "~" V 980 2450 30  0000 C CNN
+F 3 "~" H 1050 2450 30  0000 C CNN
+	1    1050 2450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	950  2150 950  2200
+	1050 2150 1050 2200
 Wire Wire Line
-	950  2700 950  2800
-Connection ~ 950  2800
+	6750 4300 6750 2850
+Wire Wire Line
+	6750 2850 6850 2850
+Wire Wire Line
+	1050 2700 1050 2850
+Wire Wire Line
+	1000 2850 3050 2850
+Connection ~ 1050 2850
 $EndSCHEMATC
