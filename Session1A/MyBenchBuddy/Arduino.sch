@@ -39,9 +39,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 7 9
 Title ""
-Date "26 feb 2014"
+Date "1 mar 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -59,10 +59,10 @@ Text HLabel 6200 2800 2    60   Input ~ 0
 MISO
 Text HLabel 6200 2600 2    60   Output ~ 0
 SCLK
-Text HLabel 6200 3200 2    60   Output ~ 0
+Text HLabel 6200 3950 2    60   Output ~ 0
 DAC_CS_N
-Text HLabel 6200 5350 2    60   Output ~ 0
-FAN_EN_N
+Text HLabel 6200 5350 2    60   Input ~ 0
+FAN_MODE
 Text HLabel 2650 4950 0    60   Input ~ 0
 TACH_MEAS
 $Comp
@@ -188,12 +188,12 @@ Wire Wire Line
 $Comp
 L R R?
 U 1 1 530D6FFE
-P 5750 3200
-F 0 "R?" V 5830 3200 40  0000 C CNN
-F 1 "R" V 5757 3201 40  0000 C CNN
-F 2 "~" V 5680 3200 30  0000 C CNN
-F 3 "~" H 5750 3200 30  0000 C CNN
-	1    5750 3200
+P 5750 3950
+F 0 "R?" V 5830 3950 40  0000 C CNN
+F 1 "R" V 5757 3951 40  0000 C CNN
+F 2 "~" V 5680 3950 30  0000 C CNN
+F 3 "~" H 5750 3950 30  0000 C CNN
+	1    5750 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -236,9 +236,9 @@ Wire Wire Line
 Wire Wire Line
 	5500 3000 5300 3000
 Wire Wire Line
-	5300 3200 5500 3200
+	5300 3950 5500 3950
 Wire Wire Line
-	6000 3200 6200 3200
+	6000 3950 6200 3950
 Wire Wire Line
 	6200 3000 6000 3000
 Wire Wire Line
@@ -294,4 +294,32 @@ Wire Wire Line
 	5500 3600 5300 3600
 Wire Wire Line
 	6000 3600 6200 3600
+$Comp
+L R R?
+U 1 1 531166F5
+P 3150 3900
+F 0 "R?" V 3230 3900 40  0000 C CNN
+F 1 "R" V 3157 3901 40  0000 C CNN
+F 2 "~" V 3080 3900 30  0000 C CNN
+F 3 "~" H 3150 3900 30  0000 C CNN
+	1    3150 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 3900 3400 3900
+Wire Wire Line
+	2900 3900 1850 3900
+Wire Wire Line
+	1850 3900 1850 3800
+$Comp
+L +12P #PWR?
+U 1 1 53116736
+P 1850 3800
+F 0 "#PWR?" H 1850 3770 30  0001 C CNN
+F 1 "+12P" H 1850 3900 30  0000 C CNN
+F 2 "" H 1850 3800 60  0000 C CNN
+F 3 "" H 1850 3800 60  0000 C CNN
+	1    1850 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
