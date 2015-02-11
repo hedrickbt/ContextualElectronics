@@ -1,4 +1,4 @@
-update=2/4/2015 9:14:22 PM
+update=2/10/2015 8:58:28 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=alphaomega
+LibName32=trenchmos

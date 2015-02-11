@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AOD476
+F transistors/mos/*.*
+$ENDCMP
+#
+#End Doc Library

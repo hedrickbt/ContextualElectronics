@@ -1,4 +1,4 @@
-Circuit: * C:\data\SpiderOak\projects\ContextualElectronics\SinkOrSwim\Simulation\OpAmpFetResistor.asc
+Circuit: * C:\data\SpiderOak\projects\ContextualElectronics\SinkOrSwim\simulation\OpAmpFetResistor.asc
 
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -40,8 +40,8 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Tue Feb 03 13:29:17 2015
-Total elapsed time: 0.213 seconds.
+Date: Thu Feb 05 12:30:14 2015
+Total elapsed time: 0.228 seconds.
 
 tnom = 27
 temp = 27
@@ -54,7 +54,7 @@ rejected = 237
 matrix size = 24
 fillins = 19
 solver = Normal
-Matrix Compiler1: 1.69 KB object code size  1.0/0.5/[0.3]
-Matrix Compiler2: off  [0.5]/0.7/0.5
+Matrix Compiler1:      98 opcodes  1.1/[0.5]/0.8
+Matrix Compiler2: off  [0.4]/0.6/0.7
 
 
