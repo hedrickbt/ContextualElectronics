@@ -1,0 +1,157 @@
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 2/14/2015 4:40:17 PM
+
+BeginCmp
+TimeStamp = /54DC38FD/54DC4901;
+Reference = C201;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3B20/54DC68AA;
+Reference = C301;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3F9A/54DC5479;
+Reference = C401;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3F9A/54DC5480;
+Reference = C402;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3B20/54DC6A11;
+Reference = D301;
+ValeurCmp = DIODE;
+IdModule  = Diodes_SMD:Diode-SMA_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DADCB8;
+Reference = P101;
+ValeurCmp = CONN_01X02;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DAD7C1;
+Reference = P102;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /54D1894C;
+Reference = P103;
+ValeurCmp = CONN_01X02;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54DC4918;
+Reference = Q201;
+ValeurCmp = BUK9575-100A;
+IdModule  = Transistors_TO-220:TO-220_FET-GDS_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54DC48CB;
+Reference = R201;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54DC4D3B;
+Reference = R202;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54DC48BE;
+Reference = R203;
+ValeurCmp = .1;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM15mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3B20/54DC6887;
+Reference = R301;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3B20/54DC6B1A;
+Reference = R302;
+ValeurCmp = 9K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3B20/54DC6B7F;
+Reference = R303;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3F9A/54DC54C6;
+Reference = R401;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3F9A/54DC54AD;
+Reference = R402;
+ValeurCmp = 27K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3F9A/54DC54B4;
+Reference = R403;
+ValeurCmp = 21.6K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54DC48F1;
+Reference = RV201;
+ValeurCmp = POT;
+IdModule  = pcb:Potiometer_Bourns_3362P;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3B20/54DC689F;
+Reference = RV301;
+ValeurCmp = POT;
+IdModule  = pcb:Potiometer_Bourns_3362P;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54DC4911;
+Reference = U201;
+ValeurCmp = LMV358;
+IdModule  = SMD_Packages:SOIC-8-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC3F9A/54DC5489;
+Reference = U401;
+ValeurCmp = LM2931D-R;
+IdModule  = SMD_Packages:SOIC-8-N;
+EndCmp
+
+EndListe
