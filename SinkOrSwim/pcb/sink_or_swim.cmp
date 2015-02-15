@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 2/14/2015 4:40:17 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 2/15/2015 2:08:32 PM
 
 BeginCmp
 TimeStamp = /54DC38FD/54DC4901;
@@ -54,6 +54,13 @@ TimeStamp = /54D1894C;
 Reference = P103;
 ValeurCmp = CONN_01X02;
 IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54E0DC1E;
+Reference = P201;
+ValeurCmp = CONN_01X01;
+IdModule  = pcb:FA-T220-38E;
 EndCmp
 
 BeginCmp
@@ -150,7 +157,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54DC3F9A/54DC5489;
 Reference = U401;
-ValeurCmp = LM2931D-R;
+ValeurCmp = LM2931;
 IdModule  = SMD_Packages:SOIC-8-N;
 EndCmp
 

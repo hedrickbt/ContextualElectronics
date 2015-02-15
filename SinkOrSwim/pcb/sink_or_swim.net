@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:/Data/SpiderOak/projects/ContextualElectronics/SinkOrSwim/pcb/sink_or_swim.sch)
-    (date "2/15/2015 11:47:37 AM")
+    (date "2/15/2015 2:08:53 PM")
     (tool "Eeschema (2015-01-29 BZR 5396)-product"))
   (components
     (comp (ref P102)
@@ -75,6 +75,7 @@
       (tstamp 54DC4D3B))
     (comp (ref P201)
       (value CONN_01X01)
+      (footprint pcb:FA-T220-38E)
       (libsource (lib conn) (part CONN_01X01))
       (sheetpath (names /CurrentControl/) (tstamps /54DC38FD/))
       (tstamp 54E0DC1E))
