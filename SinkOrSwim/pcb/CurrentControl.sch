@@ -122,8 +122,6 @@ $EndComp
 Wire Wire Line
 	4350 2150 5750 2150
 Connection ~ 4350 2150
-Wire Wire Line
-	5750 2150 5750 2700
 Text Label 4650 2150 0    60   ~ 0
 2.7V
 Wire Wire Line
@@ -214,4 +212,19 @@ Wire Wire Line
 	7900 5150 8450 5150
 Text HLabel 8450 5150 2    60   Input ~ 0
 Current_Sink-
+$Comp
+L CONN_01X01 P201
+U 1 1 54E0DC1E
+P 8900 3400
+F 0 "P201" H 8900 3500 50  0000 C CNN
+F 1 "CONN_01X01" V 9000 3400 50  0000 C CNN
+F 2 "" H 8900 3400 60  0000 C CNN
+F 3 "" H 8900 3400 60  0000 C CNN
+	1    8900 3400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4200 3200
+NoConn ~ 8700 3400
+Wire Wire Line
+	5750 2150 5750 2700
 $EndSCHEMATC

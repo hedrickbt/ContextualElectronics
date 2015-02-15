@@ -96,7 +96,7 @@ P 4450 4050
 F 0 "RV301" H 4450 3950 50  0000 C CNN
 F 1 "POT" H 4450 4050 50  0000 C CNN
 F 2 "pcb:Potiometer_Bourns_3362P" H 4450 4050 60  0001 C CNN
-F 3 "http://www.bourns.com/data/global/pdfs/3362.pdf" H 4450 4050 60  0000 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/3362.pdf" H 4450 4050 60  0001 C CNN
 F 4 "3362P-1" H 4450 4050 60  0001 C CNN "MPN"
 	1    4450 4050
 	0    1    1    0   
@@ -207,4 +207,5 @@ Current_Sink+
 Connection ~ 8500 5600
 Text HLabel 9350 5600 2    60   Input ~ 0
 Curent_Sink-
+NoConn ~ 4450 3800
 $EndSCHEMATC
