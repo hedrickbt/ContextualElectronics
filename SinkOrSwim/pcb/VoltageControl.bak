@@ -49,12 +49,13 @@ $EndDescr
 $Comp
 L R R301
 U 1 1 54DC6887
-P 4450 4900
-F 0 "R301" V 4530 4900 50  0000 C CNN
-F 1 "R" V 4457 4901 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4380 4900 30  0001 C CNN
-F 3 "" H 4450 4900 30  0000 C CNN
-	1    4450 4900
+P 4600 4150
+F 0 "R301" V 4680 4150 50  0000 C CNN
+F 1 "28.7K" V 4607 4151 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4530 4150 30  0001 C CNN
+F 3 "" H 4600 4150 30  0000 C CNN
+F 4 "Value" H 4600 4150 60  0001 C CNN "MPN"
+	1    4600 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -77,28 +78,23 @@ Wire Wire Line
 Wire Wire Line
 	5250 4350 8500 4350
 Wire Wire Line
-	4450 4300 4450 4650
-Wire Wire Line
-	4450 4500 4800 4500
-Wire Wire Line
-	4800 4500 4800 3250
+	4800 4750 4800 3250
 Wire Wire Line
 	4800 3250 5600 3250
-Connection ~ 4450 4500
 Wire Wire Line
-	4450 5150 4450 5600
+	4200 5000 4200 5600
 Wire Wire Line
-	4450 5600 9350 5600
+	4200 5600 9350 5600
 $Comp
 L POT RV301
 U 1 1 54DC689F
-P 4450 4050
-F 0 "RV301" H 4450 3950 50  0000 C CNN
-F 1 "POT" H 4450 4050 50  0000 C CNN
-F 2 "pcb:Potiometer_Bourns_3362P" H 4450 4050 60  0001 C CNN
-F 3 "http://www.bourns.com/data/global/pdfs/3362.pdf" H 4450 4050 60  0001 C CNN
-F 4 "3362P-1" H 4450 4050 60  0001 C CNN "MPN"
-	1    4450 4050
+P 4200 4750
+F 0 "RV301" H 4200 4650 50  0000 C CNN
+F 1 "10K" H 4200 4750 50  0000 C CNN
+F 2 "pcb:Potiometer_Bourns_3362P" H 4200 4750 60  0001 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/3362.pdf" H 4200 4750 60  0001 C CNN
+F 4 "3362P-1" H 4200 4750 60  0001 C CNN "MPN"
+	1    4200 4750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -151,8 +147,6 @@ Text GLabel 3650 1900 0    60   Input ~ 0
 2.7V
 Wire Wire Line
 	3650 1900 4600 1900
-Wire Wire Line
-	4600 1900 4600 4050
 $Comp
 L DIODE D301
 U 1 1 54DC6A11
@@ -207,5 +201,11 @@ Current_Sink+
 Connection ~ 8500 5600
 Text HLabel 9350 5600 2    60   Input ~ 0
 Curent_Sink-
-NoConn ~ 4450 3800
+Wire Wire Line
+	4350 4750 4800 4750
+Wire Wire Line
+	4600 1900 4600 3900
+Wire Wire Line
+	4600 4400 4600 4750
+Connection ~ 4600 4750
 $EndSCHEMATC

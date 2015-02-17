@@ -3,7 +3,7 @@
   (general
     (links 44)
     (no_connects 0)
-    (area 149.301999 67.513999 194.106001 135.686001)
+    (area 149.301999 67.513999 192.614334 135.686001)
     (thickness 1.6)
     (drawings 4)
     (tracks 146)
@@ -62,7 +62,7 @@
     (pad_drill 0.6)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFFEFFF)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -876,8 +876,8 @@
   (segment (start 162.026 124.994) (end 163.068 123.952) (width 0.254) (layer F.Cu) (net 1) (tstamp 54E109DF))
   (segment (start 168.93 123.952) (end 168.93 121.94) (width 0.254) (layer F.Cu) (net 1))
   (segment (start 168.93 121.94) (end 168.529 121.539) (width 0.254) (layer F.Cu) (net 1) (tstamp 54E109D9))
-  (segment (start 176.958 102.616) (end 176.958 104.982) (width 0.254) (layer F.Cu) (net 2) (status 400000))
-  (segment (start 185.547 103.251) (end 182.245 103.251) (width 0.254) (layer F.Cu) (net 2) (tstamp 54E10E96) (status 800000))
+  (segment (start 176.958 102.616) (end 176.958 104.982) (width 0.254) (layer F.Cu) (net 2))
+  (segment (start 185.547 103.251) (end 182.245 103.251) (width 0.254) (layer F.Cu) (net 2) (tstamp 54E10E96))
   (segment (start 185.928 103.632) (end 185.547 103.251) (width 0.254) (layer F.Cu) (net 2) (tstamp 54E10E95))
   (via (at 185.928 103.632) (size 0.889) (layers F.Cu B.Cu) (net 2))
   (segment (start 185.928 104.648) (end 185.928 103.632) (width 0.254) (layer B.Cu) (net 2) (tstamp 54E10E89))

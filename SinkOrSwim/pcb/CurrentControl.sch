@@ -61,12 +61,13 @@ $EndComp
 $Comp
 L R R201
 U 1 1 54DC48CB
-P 4200 4300
-F 0 "R201" V 4280 4300 50  0000 C CNN
-F 1 "R" V 4207 4301 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 4300 30  0001 C CNN
-F 3 "" H 4200 4300 30  0000 C CNN
-	1    4200 4300
+P 4350 3250
+F 0 "R201" V 4430 3250 50  0000 C CNN
+F 1 "68K" V 4357 3251 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4280 3250 30  0001 C CNN
+F 3 "" H 4350 3250 30  0000 C CNN
+F 4 "Value" H 4350 3250 60  0001 C CNN "MPN"
+	1    4350 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -94,31 +95,14 @@ Wire Wire Line
 	5000 3750 7900 3750
 Connection ~ 7900 3750
 Wire Wire Line
-	4200 3700 4200 4050
-Wire Wire Line
-	4200 3900 4550 3900
-Wire Wire Line
 	4550 3900 4550 3000
 Wire Wire Line
 	4550 3000 5350 3000
-Connection ~ 4200 3900
 Wire Wire Line
-	4200 4550 4200 5000
+	4100 4450 4100 5000
 Wire Wire Line
-	4200 5000 7900 5000
+	4100 5000 7900 5000
 Connection ~ 7900 5000
-$Comp
-L POT RV201
-U 1 1 54DC48F1
-P 4200 3450
-F 0 "RV201" H 4200 3350 50  0000 C CNN
-F 1 "POT" H 4200 3450 50  0000 C CNN
-F 2 "pcb:Potiometer_Bourns_3362P" H 4200 3450 60  0001 C CNN
-F 3 "http://www.bourns.com/data/global/pdfs/3362.pdf" H 4200 3450 60  0001 C CNN
-F 4 "3362P-1" H 4200 3450 60  0001 C CNN "MPN"
-	1    4200 3450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4350 2150 5750 2150
 Connection ~ 4350 2150
@@ -181,7 +165,7 @@ Text GLabel 3400 1650 0    60   Input ~ 0
 Wire Wire Line
 	3400 1650 4350 1650
 Wire Wire Line
-	4350 1650 4350 3450
+	4350 1650 4350 3000
 Text HLabel 8350 1750 2    60   Input ~ 0
 Current_Sink+
 Wire Wire Line
@@ -223,8 +207,26 @@ F 3 "" H 8900 3400 60  0000 C CNN
 	1    8900 3400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4200 3200
 NoConn ~ 8700 3400
 Wire Wire Line
 	5750 2150 5750 2700
+Connection ~ 4350 3900
+Wire Wire Line
+	4350 3900 4550 3900
+$Comp
+L POT RV201
+U 1 1 54DC48F1
+P 4100 4200
+F 0 "RV201" H 4100 4100 50  0000 C CNN
+F 1 "10K" H 4100 4200 50  0000 C CNN
+F 2 "pcb:Potiometer_Bourns_3362P" H 4100 4200 60  0001 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/3362.pdf" H 4100 4200 60  0001 C CNN
+F 4 "3362P-1" H 4100 4200 60  0001 C CNN "MPN"
+	1    4100 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 4200 4250 4200
+Wire Wire Line
+	4350 3500 4350 4200
 $EndSCHEMATC
