@@ -214,4 +214,5 @@ Text Notes 7200 4450 0    60   ~ 0
 0-2V
 Text Notes 8850 3650 0    60   ~ 0
 0-20V
+NoConn ~ 4200 4500
 $EndSCHEMATC
