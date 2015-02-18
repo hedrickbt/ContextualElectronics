@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 2/15/2015 2:08:32 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 2/17/2015 7:56:50 PM
 
 BeginCmp
 TimeStamp = /54DC38FD/54DC4901;
@@ -39,7 +39,7 @@ BeginCmp
 TimeStamp = /54DADCB8;
 Reference = P101;
 ValeurCmp = CONN_01X02;
-IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+IdModule  = pcb:OSTTA024163;
 EndCmp
 
 BeginCmp
@@ -53,7 +53,7 @@ BeginCmp
 TimeStamp = /54D1894C;
 Reference = P103;
 ValeurCmp = CONN_01X02;
-IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+IdModule  = pcb:OSTTA024163;
 EndCmp
 
 BeginCmp
@@ -73,7 +73,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54DC38FD/54DC48CB;
 Reference = R201;
-ValeurCmp = R;
+ValeurCmp = 68K;
 IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
@@ -94,7 +94,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54DC3B20/54DC6887;
 Reference = R301;
-ValeurCmp = R;
+ValeurCmp = 28.7K;
 IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
@@ -136,14 +136,14 @@ EndCmp
 BeginCmp
 TimeStamp = /54DC38FD/54DC48F1;
 Reference = RV201;
-ValeurCmp = POT;
+ValeurCmp = 10K;
 IdModule  = pcb:Potiometer_Bourns_3362P;
 EndCmp
 
 BeginCmp
 TimeStamp = /54DC3B20/54DC689F;
 Reference = RV301;
-ValeurCmp = POT;
+ValeurCmp = 10K;
 IdModule  = pcb:Potiometer_Bourns_3362P;
 EndCmp
 
