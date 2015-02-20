@@ -179,4 +179,6 @@ Text GLabel 6900 2000 2    60   Input ~ 0
 2.7V
 Text HLabel 3750 2000 0    60   Input ~ 0
 Vin
+Text Label 6150 3100 0    60   ~ 0
+2.7V
 $EndSCHEMATC
