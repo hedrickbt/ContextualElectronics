@@ -1,11 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 2/17/2015 7:56:50 PM
-
-BeginCmp
-TimeStamp = /54DC38FD/54DC4901;
-Reference = C201;
-ValeurCmp = C;
-IdModule  = Capacitors_SMD:C_0805_HandSoldering;
-EndCmp
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 2/21/2015 10:05:06 AM
 
 BeginCmp
 TimeStamp = /54DC3B20/54DC68AA;
@@ -61,6 +54,20 @@ TimeStamp = /54DC38FD/54E0DC1E;
 Reference = P201;
 ValeurCmp = CONN_01X01;
 IdModule  = pcb:FA-T220-38E;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54E8A789;
+Reference = P202;
+ValeurCmp = B4_FET;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC38FD/54E8A830;
+Reference = P203;
+ValeurCmp = AFTR_FET;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp

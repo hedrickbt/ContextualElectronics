@@ -70,10 +70,6 @@ F 4 "Value" H 4350 3250 60  0001 C CNN "MPN"
 	1    4350 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7900 3300 7900 3950
-Wire Wire Line
-	7900 4450 7900 5150
 $Comp
 L GND #PWR03
 U 1 1 54DC48D7
@@ -85,58 +81,8 @@ F 3 "" H 5750 3550 60  0000 C CNN
 	1    5750 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 3550 5750 3500
-Wire Wire Line
-	5350 3200 5000 3200
-Wire Wire Line
-	5000 3200 5000 3750
-Wire Wire Line
-	5000 3750 7900 3750
-Connection ~ 7900 3750
-Wire Wire Line
-	4550 3900 4550 3000
-Wire Wire Line
-	4550 3000 5350 3000
-Wire Wire Line
-	4100 4450 4100 5000
-Wire Wire Line
-	4100 5000 7900 5000
-Connection ~ 7900 5000
-Wire Wire Line
-	4350 2150 5750 2150
-Connection ~ 4350 2150
 Text Label 4650 2150 0    60   ~ 0
 2.7V
-Wire Wire Line
-	7900 1750 7900 2900
-$Comp
-L C C201
-U 1 1 54DC4901
-P 5100 2500
-F 0 "C201" H 5150 2600 50  0000 L CNN
-F 1 "C" H 5150 2400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5138 2350 30  0001 C CNN
-F 3 "" H 5100 2500 60  0000 C CNN
-	1    5100 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 2300 5100 2150
-Connection ~ 5100 2150
-$Comp
-L GND #PWR04
-U 1 1 54DC490A
-P 5100 2750
-F 0 "#PWR04" H 5100 2500 60  0001 C CNN
-F 1 "GND" H 5100 2600 60  0000 C CNN
-F 2 "" H 5100 2750 60  0000 C CNN
-F 3 "" H 5100 2750 60  0000 C CNN
-	1    5100 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 2750 5100 2700
 $Comp
 L LMV358 U201
 U 1 1 54DC4911
@@ -162,14 +108,8 @@ F 3 "" H 7800 3100 60  0000 C CNN
 $EndComp
 Text GLabel 3400 1650 0    60   Input ~ 0
 2.7V
-Wire Wire Line
-	3400 1650 4350 1650
-Wire Wire Line
-	4350 1650 4350 3000
 Text HLabel 8350 1750 2    60   Input ~ 0
 Current_Sink+
-Wire Wire Line
-	7900 1750 8350 1750
 $Comp
 L R R202
 U 1 1 54DC4D3B
@@ -181,19 +121,8 @@ F 3 "" H 6950 3100 30  0000 C CNN
 	1    6950 3100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6350 3100 6700 3100
-Wire Wire Line
-	7200 3100 7600 3100
-Wire Wire Line
-	7400 3100 7400 1600
-Wire Wire Line
-	7400 1600 8350 1600
-Connection ~ 7400 3100
 Text HLabel 8350 1600 2    60   Input ~ 0
 FET_Gate
-Wire Wire Line
-	7900 5150 8450 5150
 Text HLabel 8450 5150 2    60   Input ~ 0
 Current_Sink-
 $Comp
@@ -208,9 +137,6 @@ F 3 "" H 8900 3400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8700 3400
-Connection ~ 4350 3900
-Wire Wire Line
-	4350 3900 4550 3900
 $Comp
 L POT RV201
 U 1 1 54DC48F1
@@ -223,11 +149,98 @@ F 4 "3362P-1" H 4100 4200 60  0001 C CNN "MPN"
 	1    4100 4200
 	0    1    1    0   
 $EndComp
+NoConn ~ 4100 3950
+$Comp
+L CONN_01X02 P202
+U 1 1 54E8A789
+P 8150 2400
+F 0 "P202" H 8150 2550 50  0000 C CNN
+F 1 "B4_FET" V 8250 2400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8150 2400 60  0001 C CNN
+F 3 "" H 8150 2400 60  0000 C CNN
+	1    8150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P203
+U 1 1 54E8A830
+P 8150 3500
+F 0 "P203" H 8150 3650 50  0000 C CNN
+F 1 "AFTR_FET" V 8250 3500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8150 3500 60  0001 C CNN
+F 3 "" H 8150 3500 60  0000 C CNN
+	1    8150 3500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4350 4200 4250 4200
+	7900 3550 7900 3950
+Wire Wire Line
+	7950 3550 7900 3550
+Wire Wire Line
+	7900 3450 7950 3450
+Wire Wire Line
+	7900 3300 7900 3450
+Wire Wire Line
+	7900 2450 7900 2900
+Wire Wire Line
+	7950 2450 7900 2450
+Wire Wire Line
+	7900 2350 7950 2350
+Wire Wire Line
+	7900 1750 7900 2350
+Wire Wire Line
+	5750 2150 5750 2700
 Wire Wire Line
 	4350 3500 4350 4200
 Wire Wire Line
-	5750 2150 5750 2700
-NoConn ~ 4100 3950
+	4350 4200 4250 4200
+Wire Wire Line
+	4350 3900 4550 3900
+Connection ~ 4350 3900
+Wire Wire Line
+	7900 5150 8450 5150
+Connection ~ 7400 3100
+Wire Wire Line
+	7400 1600 8350 1600
+Wire Wire Line
+	7400 3100 7400 1600
+Wire Wire Line
+	7200 3100 7600 3100
+Wire Wire Line
+	6350 3100 6700 3100
+Wire Wire Line
+	7900 1750 8350 1750
+Wire Wire Line
+	4350 1650 4350 3000
+Wire Wire Line
+	3400 1650 4350 1650
+Connection ~ 4350 2150
+Wire Wire Line
+	4350 2150 5750 2150
+Connection ~ 7900 5000
+Wire Wire Line
+	4100 5000 7900 5000
+Wire Wire Line
+	4100 4450 4100 5000
+Wire Wire Line
+	4550 3000 5350 3000
+Wire Wire Line
+	4550 3900 4550 3000
+Connection ~ 7900 3750
+Wire Wire Line
+	5000 3750 7900 3750
+Wire Wire Line
+	5000 3200 5000 3750
+Wire Wire Line
+	5350 3200 5000 3200
+Wire Wire Line
+	5750 3550 5750 3500
+Wire Wire Line
+	7900 4450 7900 5150
+Text Label 7900 2750 0    60   ~ 0
+Current_Sink+
+Text Label 7900 3350 0    60   ~ 0
+Current_Sink-
+Text Label 7900 3700 0    60   ~ 0
+Current_Sink-
 $EndSCHEMATC
