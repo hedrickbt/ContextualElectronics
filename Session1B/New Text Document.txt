@@ -1,0 +1,13 @@
+3.7.2015
+DONE on boards 2,3
+Module 5 Unit 8 DAC Construction
+Module 5 Unit 9 Hooking The Arduino To The Relay
+DONE on boards 1,2,3
+Module 5 Unit 11 Odd Power Behavior
+Module 5 Unit 13 Power Diode Bodge
+
+DONE on boards 1,2,3
+Module 5 Unit 12 SPI Pin Swap
+
+TODO on boards 1,2,3
+Module 6 Unit 1 	DAC Test Program

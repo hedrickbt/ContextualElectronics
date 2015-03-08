@@ -1,25 +1,20 @@
-Reference, Value, Footprint, Datasheet, MPN
-P102,CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03,
-P101,TERMINAL_BLOCK,pcb:OSTTA024163,http://www.on-shore.com/sites/default/files/manuals/OSTTAXX4163.pdf,OSTTA024163
-P103,TERMINAL_BLOCK,pcb:OSTTA024163,http://www.on-shore.com/sites/default/files/manuals/OSTTAXX4163.pdf,OSTTA024163
-R203,.1,Resistors_ThroughHole:Resistor_Horizontal_RM15mm,http://www.vishay.com/docs/28730/acseries.pdf,Value
-R201,68K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT68K0
-U201,LMV358,SMD_Packages:SOIC-8-N,http://www.st.com/web/en/resource/technical/document/datasheet/CD00079372.pdf,LMV358IDT
-Q201,BUK9575-100A,Transistors_TO-220:TO-220_FET-GDS_Vertical,http://www.nxp.com/documents/data_sheet/BUK9575_9675-100A.pdf,"BUK9575-100A,127"
-R202,1K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT1K00
-P201,HEATSINK,pcb:FA-T220-38E,http://media.digikey.com/pdf/Data%20Sheets/Ohmite%20PDFs/F_R_Series.pdf,FA-T220-38E
-RV201,10K,pcb:Potiometer_Bourns_3362P,http://www.bourns.com/data/global/pdfs/3362.pdf,3362P-1
-P202,B4_FET,Pin_Headers:Pin_Header_Straight_1x02,
-P203,AFTR_FET,Pin_Headers:Pin_Header_Straight_1x02,
-R301,28.7K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT28K7
-RV301,10K,pcb:Potiometer_Bourns_3362P,http://www.bourns.com/data/global/pdfs/3362.pdf,3362P-1
-C301,.1uf,Capacitors_SMD:C_0805_HandSoldering,http://www.avx.com/docs/Catalogs/cx7r.pdf,08055C104JAT2A
-D301,DIODE,Diodes_SMD:Diode-SMA_Handsoldering,http://www.diodes.com/datasheets/ds15002.pdf,RS1M-13-F
-R302,9K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT9K10
-R303,1K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT1K00
-C401,.1uf,Capacitors_SMD:C_0805_HandSoldering,http://www.avx.com/docs/Catalogs/cx7r.pdf,08055C104JAT2A
-C402,.1uf,Capacitors_SMD:C_0805_HandSoldering,http://www.avx.com/docs/Catalogs/cx7r.pdf,08055C104JAT2A
-U401,LM2931,SMD_Packages:SOIC-8-N,http://www.st.com/web/en/resource/technical/document/datasheet/CD00001885.pdf,LMD2931D-R
-R402,27K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT27K0
-R403,21.6K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT21K5
-R401,0,Resistors_SMD:R_0805_HandSoldering,http://www.vishay.com/docs/20043/crcwhpe3.pdf,CRCW08050000Z0EAHP
+Reference, Quantity, Value, Footprint, Datasheet, MPN
+C301 C401 C402 ,3,.1uf,Capacitors_SMD:C_0805_HandSoldering,http://www.avx.com/docs/Catalogs/cx7r.pdf,08055C104JAT2A
+D301 ,1,DIODE,Diodes_SMD:Diode-SMA_Handsoldering,http://www.diodes.com/datasheets/ds15002.pdf,RS1M-13-F
+P101 P103 ,2,TERMINAL_BLOCK,pcb:OSTTA024163,http://www.on-shore.com/sites/default/files/manuals/OSTTAXX4163.pdf,OSTTA024163
+P102 ,1,CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03,
+P201 ,1,HEATSINK,pcb:FA-T220-38E,http://media.digikey.com/pdf/Data%20Sheets/Ohmite%20PDFs/F_R_Series.pdf,FA-T220-38E
+P202 ,1,B4_FET,Pin_Headers:Pin_Header_Straight_1x02,
+P203 ,1,AFTR_FET,Pin_Headers:Pin_Header_Straight_1x02,
+Q201 ,1,BUK9575-100A,Transistors_TO-220:TO-220_FET-GDS_Vertical,http://www.nxp.com/documents/data_sheet/BUK9575_9675-100A.pdf,"BUK9575-100A,127"
+R201 ,1,68K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT68K0
+R202 R303 ,2,1K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT1K00
+R203 ,1,.1,Resistors_ThroughHole:Resistor_Horizontal_RM15mm,http://www.vishay.com/docs/28730/acseries.pdf,Value
+R301 ,1,28.7K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT28K7
+R302 ,1,9K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT9K10
+R401 ,1,0,Resistors_SMD:R_0805_HandSoldering,http://www.vishay.com/docs/20043/crcwhpe3.pdf,CRCW08050000Z0EAHP
+R402 ,1,27K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT27K0
+R403 ,1,21.6K,Resistors_SMD:R_0805_HandSoldering,http://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf,RMCF0805FT21K5
+RV201 RV301 ,2,10K,pcb:Potiometer_Bourns_3362P,http://www.bourns.com/data/global/pdfs/3362.pdf,3362P-1
+U201 ,1,LMV358,SMD_Packages:SOIC-8-N,http://www.st.com/web/en/resource/technical/document/datasheet/CD00079372.pdf,LMV358IDT
+U401 ,1,LM2931,SMD_Packages:SOIC-8-N,http://www.st.com/web/en/resource/technical/document/datasheet/CD00001885.pdf,LMD2931D-R

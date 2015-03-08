@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:/data/SpiderOak/projects/ContextualElectronics/SinkOrSwim/pcb/sink_or_swim.sch</source>
-    <date>3/3/2015 12:54:11 AM</date>
+    <date>3/4/2015 12:22:29 AM</date>
     <tool>Eeschema (2015-01-29 BZR 5396)-product</tool>
   </design>
   <components>
@@ -260,56 +260,35 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="trenchmos" part="BUK9575-100A">
-      <docs>transistors/mos/*.*</docs>
-      <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">BUK9575-100A</field>
-      </fields>
-      <pins>
-        <pin num="D" name="D" type="passive"/>
-        <pin num="G" name="G" type="input"/>
-        <pin num="S" name="S" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="linear" part="LMV358">
-      <description>Dual Op amp (low power)</description>
-      <docs>ns/lm158.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LMV358</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="output"/>
-        <pin num="2" name="-" type="input"/>
-        <pin num="3" name="+" type="input"/>
-        <pin num="4" name="V-" type="power_in"/>
-        <pin num="5" name="+" type="input"/>
-        <pin num="6" name="-" type="input"/>
-        <pin num="7" name="~" type="output"/>
-        <pin num="8" name="V+" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="regul" part="LM2931D-R">
-      <description>APE8865Y5-12-HF-3, 300 mA Low Dropout Voltage Regulator, Fixed Output 1.2V, SOT-23-5</description>
-      <docs>http://www.a-powerusa.com/docs/APE8865-3.pdf</docs>
+    <libpart lib="device" part="C">
+      <description>Condensateur non polarise</description>
       <footprints>
-        <fp>SOT*</fp>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
       </footprints>
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LM2931D-R</field>
-        <field name="Footprint">SO-8</field>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
       </fields>
       <pins>
-        <pin num="1" name="VOUT" type="input"/>
-        <pin num="2" name="GND" type="input"/>
-        <pin num="3" name="GND" type="input"/>
-        <pin num="4" name="ADJ" type="input"/>
-        <pin num="5" name="INHIBIT" type="input"/>
-        <pin num="6" name="GND" type="input"/>
-        <pin num="7" name="GND" type="input"/>
-        <pin num="8" name="VIN" type="power_out"/>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="DIODE">
+      <description>Diode simple</description>
+      <footprints>
+        <fp>D?</fp>
+        <fp>S*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DIODE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="POT">
@@ -390,41 +369,65 @@
         <pin num="3" name="P3" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="C">
-      <description>Condensateur non polarise</description>
-      <footprints>
-        <fp>SM*</fp>
-        <fp>C?</fp>
-        <fp>C1-1</fp>
-      </footprints>
+    <libpart lib="linear" part="LMV358">
+      <description>Dual Op amp (low power)</description>
+      <docs>ns/lm158.pdf</docs>
       <fields>
-        <field name="Reference">C</field>
-        <field name="Value">C</field>
+        <field name="Reference">U</field>
+        <field name="Value">LMV358</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="DIODE">
-      <description>Diode simple</description>
+    <libpart lib="regul" part="LM2931D-R">
+      <description>APE8865Y5-12-HF-3, 300 mA Low Dropout Voltage Regulator, Fixed Output 1.2V, SOT-23-5</description>
+      <docs>http://www.a-powerusa.com/docs/APE8865-3.pdf</docs>
       <footprints>
-        <fp>D?</fp>
-        <fp>S*</fp>
+        <fp>SOT*</fp>
       </footprints>
       <fields>
-        <field name="Reference">D</field>
-        <field name="Value">DIODE</field>
+        <field name="Reference">U</field>
+        <field name="Value">LM2931D-R</field>
+        <field name="Footprint">SO-8</field>
       </fields>
       <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="K" type="passive"/>
+        <pin num="1" name="VOUT" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="ADJ" type="input"/>
+        <pin num="5" name="INHIBIT" type="input"/>
+        <pin num="6" name="GND" type="input"/>
+        <pin num="7" name="GND" type="input"/>
+        <pin num="8" name="VIN" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="trenchmos" part="BUK9575-100A">
+      <docs>transistors/mos/*.*</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BUK9575-100A</field>
+      </fields>
+      <pins>
+        <pin num="D" name="D" type="passive"/>
+        <pin num="G" name="G" type="input"/>
+        <pin num="S" name="S" type="passive"/>
       </pins>
     </libpart>
   </libparts>
   <libraries>
-    <library logical="trenchmos">
-      <uri>C:\data\SpiderOak\projects\ContextualElectronics\SinkOrSwim\pcb\trenchmos.lib</uri>
+    <library logical="device">
+      <uri>C:\kicad-winbuilder-3.4\kicad\share\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\kicad-winbuilder-3.4\kicad\share\library\conn.lib</uri>
     </library>
     <library logical="regul">
       <uri>C:\kicad-winbuilder-3.4\kicad\share\library\regul.lib</uri>
@@ -432,11 +435,8 @@
     <library logical="linear">
       <uri>C:\kicad-winbuilder-3.4\kicad\share\library\linear.lib</uri>
     </library>
-    <library logical="conn">
-      <uri>C:\kicad-winbuilder-3.4\kicad\share\library\conn.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>C:\kicad-winbuilder-3.4\kicad\share\library\device.lib</uri>
+    <library logical="trenchmos">
+      <uri>C:\data\SpiderOak\projects\ContextualElectronics\SinkOrSwim\pcb\trenchmos.lib</uri>
     </library>
   </libraries>
   <nets>
