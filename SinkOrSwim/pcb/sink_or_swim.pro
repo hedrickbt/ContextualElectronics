@@ -1,4 +1,4 @@
-update=2/10/2015 8:58:28 PM
+update=3/14/2015 10:17:01 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,16 @@ LibName29=contrib
 LibName30=valves
 LibName31=alphaomega
 LibName32=trenchmos
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60

@@ -1,0 +1,40 @@
+3.7.2015
+DONE on boards 2,3
+Module 5 Unit 8 DAC Construction
+Module 5 Unit 9 Hooking The Arduino To The Relay
+DONE on boards 1,2,3
+Module 5 Unit 11 Odd Power Behavior
+Module 5 Unit 13 Power Diode Bodge
+
+3.?.2015
+DONE on boards 1,2,3
+Module 5 Unit 12 SPI Pin Swap
+
+3.?.2015
+DONE on boards 1,2,3
+Module 6 Unit 1 	DAC Test Program
+
+3.10.2015
+DONE on boards 1,2,3
+Module 6 Unit 2 	DAC SPI Troubleshooting
+
+3.11.2015
+TODO on boards 1,2,3
+Module 6 Unit 5 	Re-testing The DAC
+NOT getting current on fan+/- out yet
+
+3.11.2015
+DONE on boards 2
+Solder in R37 - pin 10 of arduino on top, 0 ohm
+
+3.11.2015
+TODO on boards 1,3
+Solder in R37 - pin 10 of arduino on top, 0 ohm
+
+3.11.2015
+TODO on boards 1,2,3
+Module 6	Unit 10 	PWM Testing
+
+
+3.10.2015 Ordering
+May want to look at some 1uf caps

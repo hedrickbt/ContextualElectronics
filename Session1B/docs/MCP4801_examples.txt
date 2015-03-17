@@ -1,0 +1,11 @@
+Starting at bit 4, use 8 bit as index value
+
+index value / 256 * 2.048 = final volt
+
+0011111111110000  -> 2.048v
+0011000000000000  -> 0.000v
+0011100000000000  -> 1.024v
+0001100000000000  -> 2.048v  ( 2x gain 0 index)
+0001111111110000  -> 4.096v  ( 2x gain 256 index)
+
+Resolution = 2.048v / 256 = .008v or 8mv
