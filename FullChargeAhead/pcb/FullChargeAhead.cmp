@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 3/18/2015 12:09:42 AM
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 3/19/2015 9:22:40 PM
 
 BeginCmp
 TimeStamp = /5508CBBF;
@@ -18,14 +18,14 @@ BeginCmp
 TimeStamp = /5508E456;
 Reference = CON101;
 ValeurCmp = USB-MICRO-B;
-IdModule  = ;
+IdModule  = pcb:MICRO_B_CONN_10118193-0001LF;
 EndCmp
 
 BeginCmp
 TimeStamp = /5508EC0D;
 Reference = D101;
 ValeurCmp = NOPOP;
-IdModule  = ;
+IdModule  = LEDs:LED-0805;
 EndCmp
 
 BeginCmp
@@ -53,7 +53,7 @@ BeginCmp
 TimeStamp = /5508E1EE;
 Reference = P102;
 ValeurCmp = BATT;
-IdModule  = ;
+IdModule  = pcb:JST_2pin_lipo_S2B-PH-SM4-TB;
 EndCmp
 
 BeginCmp
@@ -123,7 +123,7 @@ BeginCmp
 TimeStamp = /5508C8B6;
 Reference = U101;
 ValeurCmp = MCP73834-FCI/UN;
-IdModule  = ;
+IdModule  = pcb:MSOP-10;
 EndCmp
 
 EndListe
