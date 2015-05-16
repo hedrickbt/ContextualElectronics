@@ -1,0 +1,18 @@
+Contextual Electronics Progress
+
+xx.xx.2015
+DBI - OpAmp Chris
+	MCP6401
+
+5.12.2015 
+Watched 7 – Finding the DB photodiode
+Chris' parts
+    http://parts.io/detail/1028197/QSB34GR
+    http://parts.io/detail/2942714/VBPW34SR
+    http://parts.io/detail/7821875/PD15-21B%2FTR8
+    http://parts.io/detail/3733143/VBP104S
+    http://parts.io/detail/100075141/TEMD6200FX01
+
+8 – Calculating the feedback resistor
+
+

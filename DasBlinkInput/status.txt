@@ -1,0 +1,9 @@
+Das Blink Input (DB)
+
+5.12.2015
+My Photo Diodes
+
+				WL		Spectral	Dark	pkg		$
+SFH 2701		820nm	400-1050nm	.05na	1206	0.87
+TEMD7100X01		950nm	750-1050nm	1na		0805	1.10
+TEMD6200FX01	540nm	430-610nm	100pa	0805	1.44

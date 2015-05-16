@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=RBJGOOTEwfU
+
+Test 1
+black - short all pins
+black on source, red on gate
+red on drain  ( should read other than open.  very small voltage .002 maybe )
+
+black on gate
+black on source ( should read open / overload again )
+
+Test 2
+black to drain, red to source ( should see v drop of body diode ~ .442V / I saw .593V )

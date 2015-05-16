@@ -19,21 +19,175 @@ DONE on boards 1,2,3
 Module 6 Unit 2 	DAC SPI Troubleshooting
 
 3.11.2015
-TODO on boards 1,2,3
+DONE on boards 1,2,3
 Module 6 Unit 5 	Re-testing The DAC
-NOT getting current on fan+/- out yet
+Measure current on fan+/- out yet.  Use Rigol on A setting, not mA setting
 
 3.11.2015
 DONE on boards 2
 Solder in R37 - pin 10 of arduino on top, 0 ohm
 
 3.11.2015
-TODO on boards 1,3
+DONE on boards 1,3 (3.26.2015)
 Solder in R37 - pin 10 of arduino on top, 0 ohm
 
 3.11.2015
-TODO on boards 1,2,3
+DONE on boards 1,2,3 ( 3.26.2015 all boards passed mcp4801_pwm_test : up to minute 20)
 Module 6	Unit 10 	PWM Testing
+Test by probing the DAC OUT test point .128v down to 0v.  You can also put an oscope on pin 10 and watch the pwm
+signal.  Duty cycles values will be 0, 25%, 50%, 75%, 100%
+
+3.26.2015
+DONE board 1,2,3 ( had to resolder R62 on 1 board).  (3.26.2015)
+Module 6	Unit 10 	PWM Testing  : after minute 20
+Test by putting an ammeter on fan+ / fan- ( edge terminals 4,5 from green )
+Using the mcp4801_pwm_test program, you should see .127a, .095a, .063a, .031a, 0a for the corresponding V levals at the DAC OUT
+test pad.  I used Rigol meter to measure current on the A setting, not mA.
+
+3.26.2015
+DONE board 1,2,3 ( 3.28.2015 )
+Module 6	Unit 11 	Soldering Down The MCP3901 : SOLDER
+
+3.28.2015
+DONE board 1 ( 3.28.2015 )
+DONE board 2,3 ( 3.29.2015 )
+Module 6	Unit 11 	Soldering Down The MCP3901 : CHECK CONNECTIONS / BRIDGES
+TEST: Use the testpoint printout provided
+
+3.29.2015
+DONE board 1,2,3 ( 3.29.2015 ) : up to 10:39 in video
+Module 6	Unit 14 	Power Monitoring : Solder R22/R23
+
+3.29.2015
+DONE board 1,2,3
+Module 6	Unit 14 	Power Monitoring : Test voltages
+TEST: V+_ADJ at screw terminals should range from about 10.4v - 1.25v by using the FE+ adjust variable resistor 
+( farthest from pc power connector ). At the same time, R30 should range in voltage from 2.6v - 0.313v.  
+This is due to the 4:1 ratio created by the 3K and 1K resistor divider.
+
+3.29.2015
+DONE board 1,2,3 : after 10:39 in video
+Module 6	Unit 14 	Power Monitoring : Write program to monitor Arduino Analog 0 for 2.6v - 0.313v
+TEST: I used File | Examples | Basics | ReadAnalogVoltage as my initial test program.
+
+3.29.2015
+DONE board 1,2,3 : before 14:44 in video
+Module 7	Unit 2 Q3 Testing : Soldering Q3, bodge for LATCH to GND, and FAN_MODE to Digital 3
+
+3.29.2015
+DONE board 1,2,3 : after 14:44 in video
+Module 7	Unit 2 Q3 Testing : Writing test program 5_test_fan_pwm_mod_07_unit_02
+
+3.29.2015
+DONE board 1,2,3 : after 14:44 in video
+Module 7	Unit 2 Q3 Testing : Run test program 5_test_fan_pwm_mod_07_unit_02 / fan_pwm_test
+TEST: Measure ohms across R16 while running.  Should hit 1ohm for about 2 seconds and then close to 
+0ohms for 8 seconds.  Our program keeps Q3 on for 8 seconds and off for 2 seconds.  You can also measure
+across the Drain and source of Q3.  You should see 17ohms for 2 seconds and 4K ohms for 8 seconds.  The
+DAC out test point should measure 0v as we set the mcp value to 0 in the test program.  Also if you measure
+Fan+/- out from the terminal connectors, you should see close to 0mah.
+
+
+3.29.2015
+DONE board 1,2,3 : after 14:44 in video
+Module 7	Unit 2 Q3 Testing : Run test program 5_test_fan_pwm_mod_07_unit_02/fan_pwm_test_with_dac
+TEST: The DAC out test point should measure .064v as we set the mcp value to 0 in the test program.
+Also, pin 8 of the dac should measure about .064v.  The Q3 large solder pad should measure .063v
+when fan mode is LOW(2 sec) and 0v when FAN MODE is high (8 sec).  If you measure Fan+/- out from 
+the terminal connectors, you should see about 20 mah when FAN MODE is LOW ( 2 sec) and 
+130mah when FAN MODE is HIGH (8 sec).
+NOTE: If you aren't seeing anything at the DAC OUT, make sure you are doing your analogWrite for the 
+FAN PWM inside the loop.  PWM didn't work right for me by just setting in setup().
+
+
+3.29.2015
+DONE board 1,2,3 
+Module 7	Unit 3	FAN PWM 
+With FAN_OUT+ and FAN_OUT-, from terminal block, connected to the PC FAN, run test program 
+5_test_fan_pwm_mod_07_unit_02/fan_pwm_test_with_dac_pc_fan_connected.  The PC FAN should be on for 8 seconds ( FAN MODE
+ HIGH ) and off for 2 seconds ( FAN MODE LOW )
+
+
+4.9.2015
+DONE board 2 - may need to revert
+Changed R15 from 3k to 1k.  Problem I am having is that the opamp is only outputting .6v on pin 7.  This isn't enough to turn the q4 gate on.
+
+I did revert.
+
+4.25.2015
+After lots of testing and creating a list of node voltages, it was determined Q4 was bad.  Once I replaced it and hooked a fan up to Fan+ and
+Fan-, now the fan speed varies!!  Q4 was dead on all 3 board.  I used this mosfet testing guide to evaluate the fets I removed:  
+https://www.youtube.com/watch?v=RBJGOOTEwfU.  All 3 were bad the was voltage on black/source to red/drain without touching red to gate.  Also,
+there as very little body diode drop.  Something like .001V vs .5-.6V.
+
+There is another issue.  The board I was doing all of my testing on (2) see the A value increase on FAN+ / FAN- as PWM values decrease.  Boards
+1 and 3 see the values increase as PWM increases.  I believe boards 1 and 3 are correct.  By decreasing the PWM, we should be "stealing" less
+voltage through Q2 thus letting more A through.  Now to figure out the differences.
+
+4.25.2015
+Board two had R58 soldered in ( 0 ohm ).  Removed, it didn't help
+
+4.25.2015
+Found a differenc R16 was 1K on boards 3.  On board 1,2 it is the correct value of 1 ohm!  Didn't help
+
+4.25
+Just noticed that the dac out test point, on board 2, is around 5V when it should be .0830V or so.  Board 1 and 3 are at the .0830V value.
+
+4.25.2015
+Got it.  Q2 was shot.  I replaced it with a new one.  Red source to Black Drain read about 0.6V on new fet.  On the one I replaced, 
+it read Open ( out of circuit in both cases )!
+
+Now, boards 1,2,3 increase the A at FAN+ FAN- as PWM decreases!  Finally!
+
+
+4.26.2015
+DONE	1,2,3
+Module 7	Unit 5  MCP3901 External Assembly
+1. Solder c7,c8,c12:[remove prev 1uf] 10uf 0805, L5 Ferrite Bead 0805 
+2. C30 Crystal (4|8|__16__|32) mhz (might have to change code later)
+C30 right pad to C12 bottom pad, solder a 47 pico farad ceramic capacitor
+C30 left pad to C7 left pad, solder a 47 pico farad ceramic capacitor 
+
+
+4.26.2015
+DONE	1,2,3
+Module 7	Unit 6  LMT84 Assembly and Test
+Solder : Front side
+    R59, R60 1K resistor 0805
+    R48 0 Ohm 
+Solder : Back side
+    U3 LMT84 SOT353
+    C11 1uF 0805 
+Test
+    Voltage reading GND -> TP2 (CH1) Should see ~.4v (room temp) with voltage dropping as U3 is heated 
+
+
+4.27.2015
+TODO	2,3
+DONE	1
+Module 7 	Unit 8
+Solder in all of the Arduino jumpers
+
+4.27.2015
+TODO	1,2,3
+DONE
+Module 7	Unit 8
+Writing mcp3901 test program
+
+
+
+
+3.26.2015
+TODO
+Update schematic to include the diode we added to R29 and the R35/36 cross over for mosi/miso - check Chris' schematic/pcb
+
+
+
+
+
+
+
+
 
 
 3.10.2015 Ordering
