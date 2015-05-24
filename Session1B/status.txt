@@ -169,11 +169,23 @@ Module 7 	Unit 8
 Solder in all of the Arduino jumpers
 
 4.27.2015
-TODO	1,2,3
-DONE
+TODO	2,3
+DONE	1
 Module 7	Unit 8
 Writing mcp3901 test program
 
+
+5.17.2015
+TODO	2,3
+DONE	1
+Module 7	Unit 13
+MPCI3901 SPI Bus Troubleshooting
+
+5.17.2015
+TODO	1,2,3
+DONE	1
+Module 7	Unit 15
+MCP3901 Initial Capture
 
 
 

@@ -7,8 +7,11 @@ IE
 
 
 Control byte
-Device address	Register	Read/Write 0/1
-00				?????			?
+Device address		Register	Read/Write 0/1
+Default, unless
+you get a spec.
+part from man.
+00					?????		?
 
 Ex: config 2 : constant / config 2 addr / read
 00				01011			0
@@ -18,26 +21,18 @@ Ex: config 2 : constant / config 2 addr / write
 00				01011			1
 
 
+After a reset
+Result of reading config address A / 1byte
 
-Config Address B
-00 01011 1
+00010000 
 
-Config
-00010000 00000000
+Result of reading config address B / 1 byte
 
+00001100
 
-Result of reading config address B
-mcp3901ReadRegister result
-1100
-mcp3901ReadRegister inByte
-110011
+Result of reading config address A / 2bytes
 
-00001100  00110011
-
-
-Result of reading config address A
-
-00010000  00001100
+00010000 00001100
 
 
 
