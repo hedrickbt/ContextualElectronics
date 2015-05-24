@@ -12,10 +12,20 @@ K AmpliOp
 F op_amps/lm324.pdf
 $ENDCMP
 #
+$CMP LP2980-N
+D MICROPOWER 150mA Regulator 
+K REGUL POWER  SOT23-5
+F regulator/LP2985.pdf
+$ENDCMP
+#
 $CMP MCP6404-E/SL
 D Quad Op amp.
 K AmpliOp
 F op_amps/lm324.pdf
+$ENDCMP
+#
+$CMP Photodiode
+K LED
 $ENDCMP
 #
 $CMP TLC274
