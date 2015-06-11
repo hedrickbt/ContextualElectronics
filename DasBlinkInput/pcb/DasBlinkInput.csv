@@ -1,0 +1,22 @@
+Reference, Quantity, Value, Footprint, Datasheet, MPN
+C101 C102 ,2,1uf,Capacitors_SMD:C_0805_HandSoldering,,Value
+C201 C203 ,2,.1uf,Capacitors_SMD:C_0805_HandSoldering,,Value
+C202 C301 C401 C501 ,4,100pf,Capacitors_SMD:C_0805_HandSoldering,,Value
+D201 D301 D401 D501 ,4,SFH 2701,pcb:SFH2701,http://www.osram-os.com/Graphics/XPic9/00083297_0.pdf,SFH 2701
+P101 ,1,CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,
+P102 ,1,TP_VGND,pcb:TESTPOINT_1,
+P103 ,1,TP_GND,pcb:TESTPOINT_1,
+P104 ,1,TP_3V,pcb:TESTPOINT_1,
+P105 ,1,CONN_01X05,Pin_Headers:Pin_Header_Straight_1x05,
+P106 ,1,VREF,pcb:TESTPOINT_1,
+P201 ,1,TP_CHAN1,pcb:TESTPOINT_1,
+P301 ,1,TP_CHAN2,pcb:TESTPOINT_1,
+P401 ,1,TP_CHAN3,pcb:TESTPOINT_1,
+P501 ,1,TP_CHAN4,pcb:TESTPOINT_1,
+R101 R102 R202 R203 ,4,10K,Resistors_SMD:R_0805_HandSoldering,
+R103 ,1,0,Resistors_SMD:R_0805_HandSoldering,,Value
+R201 R301 R401 R501 ,4,1MEG,Resistors_SMD:R_0805_HandSoldering,,Value
+RV201 ,1,10K,pcb:BOURNS_3361P,http://www.bourns.com/data/global/pdfs/3361.pdf,3361P-1-105GLF
+U101 ,1,LP2980-N,Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5,
+U201 ,1,MCP6404,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,http://ww1.microchip.com/downloads/en/DeviceDoc/22229D.pdf,MCP6404-E/SL
+U202 ,1,LM339,Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm,http://www.ti.com/lit/ds/symlink/lm139a.pdf,LM339ADR

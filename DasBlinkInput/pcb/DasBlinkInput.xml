@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/data/SpiderOak/projects/ContextualElectronics/DasBlinkInput/pcb/DasBlinkInput.sch</source>
+    <date>6/10/2015 7:49:17 PM</date>
+    <tool>Eeschema (2015-01-29 BZR 5396)-product</tool>
+  </design>
+  <components>
+    <comp ref="P105">
+      <value>CONN_01X05</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x05</footprint>
+      <libsource lib="conn" part="CONN_01X05"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AA94B</tstamp>
+    </comp>
+    <comp ref="P101">
+      <value>CONN_01X02</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555ABEBF</tstamp>
+    </comp>
+    <comp ref="U101">
+      <value>LP2980-N</value>
+      <footprint>Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5</footprint>
+      <libsource lib="DasBlinkInput" part="LP2980-N"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AC7D2</tstamp>
+    </comp>
+    <comp ref="C101">
+      <value>1uf</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AC341</tstamp>
+    </comp>
+    <comp ref="C102">
+      <value>1uf</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AC4FE</tstamp>
+    </comp>
+    <comp ref="R103">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AC8F0</tstamp>
+    </comp>
+    <comp ref="R101">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AD007</tstamp>
+    </comp>
+    <comp ref="R102">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AD03E</tstamp>
+    </comp>
+    <comp ref="P104">
+      <value>TP_3V</value>
+      <footprint>pcb:TESTPOINT_1</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AECB0</tstamp>
+    </comp>
+    <comp ref="P102">
+      <value>TP_VGND</value>
+      <footprint>pcb:TESTPOINT_1</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AEE2A</tstamp>
+    </comp>
+    <comp ref="P103">
+      <value>TP_GND</value>
+      <footprint>pcb:TESTPOINT_1</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555AF016</tstamp>
+    </comp>
+    <comp ref="P106">
+      <value>VREF</value>
+      <footprint>pcb:TESTPOINT_1</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>556346E5</tstamp>
+    </comp>
+    <comp ref="R201">
+      <value>1MEG</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A7DE</tstamp>
+    </comp>
+    <comp ref="C202">
+      <value>100pf</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A7E6</tstamp>
+    </comp>
+    <comp ref="U201">
+      <value>MCP6404</value>
+      <footprint>Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/22229D.pdf</datasheet>
+      <fields>
+        <field name="MPN">MCP6404-E/SL</field>
+      </fields>
+      <libsource lib="DasBlinkInput" part="MCP6404-E/SL"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A7EE</tstamp>
+    </comp>
+    <comp ref="D201">
+      <value>SFH 2701</value>
+      <footprint>pcb:SFH2701</footprint>
+      <datasheet>http://www.osram-os.com/Graphics/XPic9/00083297_0.pdf</datasheet>
+      <fields>
+        <field name="MPN">SFH 2701</field>
+      </fields>
+      <libsource lib="DasBlinkInput" part="Photodiode"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A7F6</tstamp>
+    </comp>
+    <comp ref="C201">
+      <value>.1uf</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A81E</tstamp>
+    </comp>
+    <comp ref="U202">
+      <value>LM339</value>
+      <footprint>Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm139a.pdf</datasheet>
+      <fields>
+        <field name="MPN">LM339ADR</field>
+      </fields>
+      <libsource lib="linear" part="LM339"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A836</tstamp>
+    </comp>
+    <comp ref="R203">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A840</tstamp>
+    </comp>
+    <comp ref="R202">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A847</tstamp>
+    </comp>
+    <comp ref="RV201">
+      <value>10K</value>
+      <footprint>pcb:BOURNS_3361P</footprint>
+      <datasheet>http://www.bourns.com/data/global/pdfs/3361.pdf</datasheet>
+      <fields>
+        <field name="MPN">3361P-1-105GLF</field>
+      </fields>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A856</tstamp>
+    </comp>
+    <comp ref="C203">
+      <value>.1uf</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>5557A868</tstamp>
+    </comp>
+    <comp ref="P201">
+      <value>TP_CHAN1</value>
+      <footprint>pcb:TESTPOINT_1</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/Channel1Photodetect/" tstamps="/5557A253/"/>
+      <tstamp>555AE4AC</tstamp>
+    </comp>
+    <comp ref="R301">
+      <value>1MEG</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Channel2Photodetect/" tstamps="/5557AE04/"/>
+      <tstamp>5557B2B5</tstamp>
+    </comp>
+    <comp ref="C301">
+      <value>100pf</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Channel2Photodetect/" tstamps="/5557AE04/"/>
+      <tstamp>5557B2BD</tstamp>
+    </comp>
+    <comp ref="D301">
+      <value>SFH 2701</value>
+      <footprint>pcb:SFH2701</footprint>
+      <datasheet>http://www.osram-os.com/Graphics/XPic9/00083297_0.pdf</datasheet>
+      <fields>
+        <field name="MPN">SFH 2701</field>
+      </fields>
+      <libsource lib="DasBlinkInput" part="Photodiode"/>
+      <sheetpath names="/Channel2Photodetect/" tstamps="/5557AE04/"/>
+      <tstamp>5557B2CD</tstamp>
+    </comp>
+    <comp ref="P301">
+      <value>TP_CHAN2</value>
+      <footprint>pcb:TESTPOINT_1</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/Channel2Photodetect/" tstamps="/5557AE04/"/>
+      <tstamp>555AE61A</tstamp>
+    </comp>
+    <comp ref="R401">
+      <value>1MEG</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Channel3Photodetect/" tstamps="/5557C835/"/>
+      <tstamp>5557CA9F</tstamp>
+    </comp>
+    <comp ref="C401">
+      <value>100pf</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Channel3Photodetect/" tstamps="/5557C835/"/>
+      <tstamp>5557CAA7</tstamp>
+    </comp>
+    <comp ref="D401">
+      <value>SFH 2701</value>
+      <footprint>pcb:SFH2701</footprint>
+      <datasheet>http://www.osram-os.com/Graphics/XPic9/00083297_0.pdf</datasheet>
+      <fields>
+        <field name="MPN">SFH 2701</field>
+      </fields>
+      <libsource lib="DasBlinkInput" part="Photodiode"/>
+      <sheetpath names="/Channel3Photodetect/" tstamps="/5557C835/"/>
+      <tstamp>5557CAB7</tstamp>
+    </comp>
+    <comp ref="P401">
+      <value>TP_CHAN3</value>
+      <footprint>pcb:TESTPOINT_1</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/Channel3Photodetect/" tstamps="/5557C835/"/>
+      <tstamp>555AE712</tstamp>
+    </comp>
+    <comp ref="R501">
+      <value>1MEG</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Channel4Photodetect/" tstamps="/5557CF0D/"/>
+      <tstamp>5557D1EA</tstamp>
+    </comp>
+    <comp ref="C501">
+      <value>100pf</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="MPN">Value</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Channel4Photodetect/" tstamps="/5557CF0D/"/>
+      <tstamp>5557D1F2</tstamp>
+    </comp>
+    <comp ref="D501">
+      <value>SFH 2701</value>
+      <footprint>pcb:SFH2701</footprint>
+      <datasheet>http://www.osram-os.com/Graphics/XPic9/00083297_0.pdf</datasheet>
+      <fields>
+        <field name="MPN">SFH 2701</field>
+      </fields>
+      <libsource lib="DasBlinkInput" part="Photodiode"/>
+      <sheetpath names="/Channel4Photodetect/" tstamps="/5557CF0D/"/>
+      <tstamp>5557D202</tstamp>
+    </comp>
+    <comp ref="P501">
+      <value>TP_CHAN4</value>
+      <footprint>pcb:TESTPOINT_1</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/Channel4Photodetect/" tstamps="/5557CF0D/"/>
+      <tstamp>555AE83B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Condensateur non polarise</description>
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="POT">
+      <description>Potentionmetre</description>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistance</description>
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X01">
+      <footprints>
+        <fp>Pin_Header_Straight_1X01</fp>
+        <fp>Pin_Header_Angled_1X01</fp>
+        <fp>Socket_Strip_Straight_1X01</fp>
+        <fp>Socket_Strip_Angled_1X01</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X05">
+      <footprints>
+        <fp>Pin_Header_Straight_1X05</fp>
+        <fp>Pin_Header_Angled_1X05</fp>
+        <fp>Socket_Strip_Straight_1X05</fp>
+        <fp>Socket_Strip_Angled_1X05</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="linear" part="LM339">
+      <description>Quad comparator.</description>
+      <docs>op_amps/lm139.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM339</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="openCol"/>
+        <pin num="2" name="~" type="openCol"/>
+        <pin num="3" name="V+" type="power_in"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="+" type="input"/>
+        <pin num="8" name="-" type="input"/>
+        <pin num="9" name="+" type="input"/>
+        <pin num="10" name="-" type="input"/>
+        <pin num="11" name="+" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="~" type="openCol"/>
+        <pin num="14" name="~" type="openCol"/>
+      </pins>
+    </libpart>
+    <libpart lib="DasBlinkInput" part="LP2980-N">
+      <description>TI  50mA Regulator </description>
+      <docs>http://www.ti.com/lit/ds/symlink/lp2980-n.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LP2980-N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="ON/~OFF" type="input"/>
+        <pin num="4" name="N/C" type="input"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="DasBlinkInput" part="MCP6404-E/SL">
+      <description>Quad Op amp.</description>
+      <docs>op_amps/lm324.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP6404-E/SL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V+" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="-" type="input"/>
+        <pin num="10" name="+" type="input"/>
+        <pin num="11" name="V-" type="power_in"/>
+        <pin num="12" name="+" type="input"/>
+        <pin num="13" name="-" type="input"/>
+        <pin num="14" name="~" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="DasBlinkInput" part="Photodiode">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Photodiode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\kicad-winbuilder-3.4\kicad\share\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\kicad-winbuilder-3.4\kicad\share\library\conn.lib</uri>
+    </library>
+    <library logical="linear">
+      <uri>C:\kicad-winbuilder-3.4\kicad\share\library\linear.lib</uri>
+    </library>
+    <library logical="DasBlinkInput">
+      <uri>C:\data\SpiderOak\projects\ContextualElectronics\DasBlinkInput\pcb\DasBlinkInput.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="3V">
+      <node ref="U201" pin="4"/>
+      <node ref="C102" pin="1"/>
+      <node ref="P104" pin="1"/>
+      <node ref="C201" pin="2"/>
+      <node ref="U202" pin="3"/>
+      <node ref="U101" pin="5"/>
+      <node ref="R203" pin="1"/>
+      <node ref="C203" pin="2"/>
+      <node ref="R101" pin="1"/>
+    </net>
+    <net code="2" name="Net-(U101-Pad4)">
+      <node ref="U101" pin="4"/>
+    </net>
+    <net code="3" name="Net-(R103-Pad1)">
+      <node ref="R103" pin="1"/>
+      <node ref="U101" pin="3"/>
+    </net>
+    <net code="4" name="/Channel1Photodetect/CHAN1_OUT">
+      <node ref="P105" pin="1"/>
+      <node ref="U202" pin="2"/>
+    </net>
+    <net code="5" name="VGND">
+      <node ref="D201" pin="1"/>
+      <node ref="U201" pin="3"/>
+      <node ref="R102" pin="1"/>
+      <node ref="R101" pin="2"/>
+      <node ref="D501" pin="1"/>
+      <node ref="U201" pin="12"/>
+      <node ref="D301" pin="1"/>
+      <node ref="P102" pin="1"/>
+      <node ref="U201" pin="10"/>
+      <node ref="D401" pin="1"/>
+      <node ref="U201" pin="5"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="C201" pin="1"/>
+      <node ref="R202" pin="2"/>
+      <node ref="U201" pin="11"/>
+      <node ref="U202" pin="12"/>
+      <node ref="R102" pin="2"/>
+      <node ref="U101" pin="2"/>
+      <node ref="P105" pin="5"/>
+      <node ref="C101" pin="2"/>
+      <node ref="P103" pin="1"/>
+      <node ref="C203" pin="1"/>
+      <node ref="C102" pin="2"/>
+      <node ref="P101" pin="1"/>
+      <node ref="R103" pin="2"/>
+    </net>
+    <net code="7" name="/Channel2Photodetect/CHAN2_OUT">
+      <node ref="P105" pin="2"/>
+      <node ref="U202" pin="1"/>
+    </net>
+    <net code="8" name="/Channel3Photodetect/CHAN3_OUT">
+      <node ref="P105" pin="3"/>
+      <node ref="U202" pin="13"/>
+    </net>
+    <net code="9" name="/Channel4Photodetect/CHAN4_OUT">
+      <node ref="P105" pin="4"/>
+      <node ref="U202" pin="14"/>
+    </net>
+    <net code="10" name="/Channel2Photodetect/REF_IN">
+      <node ref="U202" pin="10"/>
+      <node ref="U202" pin="6"/>
+      <node ref="RV201" pin="3"/>
+      <node ref="R202" pin="1"/>
+      <node ref="U202" pin="8"/>
+      <node ref="P106" pin="1"/>
+      <node ref="U202" pin="4"/>
+    </net>
+    <net code="11" name="Net-(C101-Pad1)">
+      <node ref="P101" pin="2"/>
+      <node ref="C101" pin="1"/>
+      <node ref="U101" pin="1"/>
+    </net>
+    <net code="12" name="Net-(RV201-Pad1)">
+      <node ref="RV201" pin="1"/>
+    </net>
+    <net code="13" name="Net-(R203-Pad2)">
+      <node ref="RV201" pin="2"/>
+      <node ref="R203" pin="2"/>
+    </net>
+    <net code="14" name="Net-(C202-Pad2)">
+      <node ref="C202" pin="2"/>
+      <node ref="R201" pin="2"/>
+      <node ref="D201" pin="2"/>
+      <node ref="U201" pin="2"/>
+    </net>
+    <net code="15" name="Net-(C202-Pad1)">
+      <node ref="U201" pin="1"/>
+      <node ref="C202" pin="1"/>
+      <node ref="R201" pin="1"/>
+      <node ref="U202" pin="5"/>
+      <node ref="P201" pin="1"/>
+    </net>
+    <net code="18" name="Net-(C301-Pad1)">
+      <node ref="R301" pin="1"/>
+      <node ref="U201" pin="7"/>
+      <node ref="C301" pin="1"/>
+      <node ref="P301" pin="1"/>
+      <node ref="U202" pin="7"/>
+    </net>
+    <net code="19" name="Net-(C301-Pad2)">
+      <node ref="R301" pin="2"/>
+      <node ref="U201" pin="6"/>
+      <node ref="C301" pin="2"/>
+      <node ref="D301" pin="2"/>
+    </net>
+    <net code="24" name="Net-(C401-Pad1)">
+      <node ref="C401" pin="1"/>
+      <node ref="R401" pin="1"/>
+      <node ref="U201" pin="8"/>
+      <node ref="P401" pin="1"/>
+      <node ref="U202" pin="11"/>
+    </net>
+    <net code="25" name="Net-(C401-Pad2)">
+      <node ref="R401" pin="2"/>
+      <node ref="C401" pin="2"/>
+      <node ref="U201" pin="9"/>
+      <node ref="D401" pin="2"/>
+    </net>
+    <net code="30" name="Net-(C501-Pad2)">
+      <node ref="D501" pin="2"/>
+      <node ref="R501" pin="2"/>
+      <node ref="C501" pin="2"/>
+      <node ref="U201" pin="13"/>
+    </net>
+    <net code="31" name="Net-(C501-Pad1)">
+      <node ref="U201" pin="14"/>
+      <node ref="C501" pin="1"/>
+      <node ref="R501" pin="1"/>
+      <node ref="P501" pin="1"/>
+      <node ref="U202" pin="9"/>
+    </net>
+  </nets>
+</export>
