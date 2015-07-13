@@ -1,0 +1,6 @@
+6.30.2015
+picked out chip BA6417F-E2
+
+todo
+schematic
+gerbers

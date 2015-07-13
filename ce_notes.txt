@@ -1,0 +1,45 @@
+More on thermistor
+https://www.adafruit.com/products/259
+Chip supports a 10K NTC thermistor which we have stuffed as a plain 10K. For people who require temperature monitors (using high charge rates), remove the 10K and solder in the thermistor in its place
+
+JST connector I ended up with - NOT through hole.  I haven't had any issues with the Adafruit boards that aren't through hole.
+MFN		S2B-PH-SM4-TB(LF)(SN)
+DFN		455-1749-1-ND
+http://www.digikey.com/scripts/DkSearch/dksus.dll?Detail&itemSeq=168640610&uq=635627406993356961&CSRT=8051886698389162050
+
+
+==========================
+go go go
+==========================
+Motor Driver Board
+Chris' Pick
+motor controller TB6593FNG
+
+Brooke's pick
+BA6417F-E2
+8-SOP
+$3.08/EA 
+
+
+Motor Encoder Board
+http://contextualelectronics.com/go-go-go/motor-encoder-board/
+Encoder		RPI-579N1 ( LTV-817 in KiCAD pins 3 and 4 were reversed.  Will make footprint )
+Comparator	LM311D ( LM311N in KiCAD )
+
+http://contextualelectronics.com/go-go-go/bundling-multiple-pcbs/
+When ordering boards, combine the motor driver and encoder onto a new pcb
+
+Mousebite footprint.024mil npth
+Edge cut .100 mil
+
+==========================
+DBI
+==========================
+http://contextualelectronics.com/das-blinkinput/db-testing/
+The linear regulator inhibit pin was hooked to ground via a 0 ohm resistor. It needs to be hooked to power. Good thing it was hooked through a 0 ohm resistor!
+The threshold (Vref) circuit requires that you remove the bottom resistor so that the potentiometer and the other (10K) resistor can form a proper divider (between 1.5V and 3V)
+Chris did not add pullup resistors to the output of the LM339, so those need to be installed for it to work. 10K will probably work better than 1K.
+
+
+
+75:1 MICRO METAL GEAR MOTOR
