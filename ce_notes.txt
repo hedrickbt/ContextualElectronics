@@ -20,6 +20,10 @@ BA6417F-E2
 8-SOP
 $3.08/EA 
 
+Final parts
+TB6593FNG / SSOP-20
+
+
 
 Motor Encoder Board
 http://contextualelectronics.com/go-go-go/motor-encoder-board/
@@ -31,6 +35,12 @@ When ordering boards, combine the motor driver and encoder onto a new pcb
 
 Mousebite footprint.024mil npth
 Edge cut .100 mil
+
+Final parts
+* LM311DR - SOIC-8
+* RPI-579N1 - through hole
+1K 0805
+100 0805
 
 ==========================
 DBI

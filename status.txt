@@ -15,6 +15,21 @@ Chris' parts
 
 8 – Calculating the feedback resistor
 
+7.18.2015 PS04
+PowerSwap looked at buck boost converters
+http://parts.io/detail/3592241/ADP2503ACPZ-R7
+http://parts.io/detail/1738355/TPS63030DSKT
+http://parts.io/detail/975975/TPS63000DRCR
 
 
 
+7.18.2015 PS05
+Potential boost converters
+http://parts.io/detail/96422200/PAM2421AECADJR
+http://parts.io/detail/975449/TPS61071DDCR
+http://www.findchips.com/search/MCP1642
+http://parts.io/detail/3539473/AP6714M10G-13
+
+7.20.2015
+GGG Motor Controller - schematic complete
+36 min in http://contextualelectronics.com/courses/go-go-go/blog/the-one-hourish-project/
