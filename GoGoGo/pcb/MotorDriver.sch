@@ -36,7 +36,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "GoGoGo Motor Driver"
 Date ""
 Rev ""
 Comp ""
@@ -241,34 +241,6 @@ F 3 "" H 1700 2800 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2000 2650 2000 2200
-Wire Wire Line
-	2000 2200 2550 2200
-Wire Wire Line
-	1900 2650 2000 2650
-Wire Wire Line
-	1900 2750 2100 2750
-Wire Wire Line
-	2100 2750 2100 2550
-Wire Wire Line
-	2100 2550 2550 2550
-Wire Wire Line
-	1900 2850 2550 2850
-Wire Wire Line
-	1900 2950 2000 2950
-Wire Wire Line
-	2000 2950 2000 3500
-Wire Wire Line
-	2000 3500 2550 3500
-Text Label 2100 2200 0    60   ~ 0
-STBY
-Text Label 2200 2550 0    60   ~ 0
-IN1
-Text Label 2200 2850 0    60   ~ 0
-IN2
-Text Label 2250 3500 0    60   ~ 0
-PWM
-Wire Wire Line
 	2550 1950 950  1950
 Wire Wire Line
 	950  1950 950  2250
@@ -350,4 +322,36 @@ F 3 "" H 1450 2650 60  0000 C CNN
 	1    1450 2650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1900 2650 2400 2650
+Wire Wire Line
+	2400 2650 2400 2850
+Wire Wire Line
+	2400 2850 2550 2850
+Wire Wire Line
+	1900 2750 2150 2750
+Wire Wire Line
+	2150 2750 2150 2550
+Wire Wire Line
+	2150 2550 2550 2550
+Wire Wire Line
+	1900 2950 2300 2950
+Wire Wire Line
+	2300 2950 2300 2200
+Wire Wire Line
+	2300 2200 2550 2200
+Wire Wire Line
+	1900 2850 2150 2850
+Wire Wire Line
+	2150 2850 2150 3500
+Wire Wire Line
+	2150 3500 2550 3500
+Text Label 2300 2200 0    60   ~ 0
+STBY
+Text Label 2350 2550 0    60   ~ 0
+IN1
+Text Label 2400 2850 0    60   ~ 0
+IN2
+Text Label 2250 3500 0    60   ~ 0
+PWM
 $EndSCHEMATC
