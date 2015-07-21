@@ -1,0 +1,8 @@
+TODO
+Order parts from Digikey
+Watch http://contextualelectronics.com/power-swap/choosing-between-boost-and-buck-boost/
+Build Motor Encoder board
+
+
+7.21.2015
+Ordered boards from oshpark
