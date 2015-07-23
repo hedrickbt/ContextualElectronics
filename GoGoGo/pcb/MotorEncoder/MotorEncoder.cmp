@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 7/22/2015 8:54:03 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 7/22/2015 10:10:14 PM
 
 BeginCmp
 TimeStamp = /55B047FC;
@@ -60,7 +60,7 @@ BeginCmp
 TimeStamp = /55B03B5A;
 Reference = U101;
 ValeurCmp = RPI-579N1;
-IdModule  = ;
+IdModule  = pcb:RPI-579N1;
 EndCmp
 
 BeginCmp
