@@ -1,0 +1,52 @@
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 7/22/2015 8:28:41 PM
+
+BeginCmp
+TimeStamp = /55B03C1A;
+Reference = R101;
+ValeurCmp = 100;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B04737;
+Reference = R102;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B04354;
+Reference = R103;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B043E5;
+Reference = R104;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B044E9;
+Reference = R105;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B03B5A;
+Reference = U101;
+ValeurCmp = RPI-579N1;
+IdModule  = DIP4;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B040EE;
+Reference = U102;
+ValeurCmp = LM311DR;
+IdModule  = ;
+EndCmp
+
+EndListe
