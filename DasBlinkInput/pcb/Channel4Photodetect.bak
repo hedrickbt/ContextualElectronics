@@ -164,4 +164,26 @@ $EndComp
 Wire Wire Line
 	6300 2900 6300 3150
 Connection ~ 6300 3150
+Text Notes 10600 7650 0    60   ~ 0
+v2
+$Comp
+L R R502
+U 1 1 55B5A291
+P 8150 2900
+F 0 "R502" V 8230 2900 50  0000 C CNN
+F 1 "10K" V 8157 2901 50  0000 C CNN
+F 2 "" V 8080 2900 30  0001 C CNN
+F 3 "" H 8150 2900 30  0000 C CNN
+	1    8150 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 2500 0    60   Input ~ 0
+3V
+Wire Wire Line
+	7700 2500 8150 2500
+Wire Wire Line
+	8150 2500 8150 2650
+Wire Wire Line
+	8150 3150 8150 3250
+Connection ~ 8150 3250
 $EndSCHEMATC

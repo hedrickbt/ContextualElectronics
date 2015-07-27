@@ -164,4 +164,26 @@ $EndComp
 Wire Wire Line
 	6000 2350 6000 2550
 Connection ~ 6000 2550
+Text Notes 10600 7650 0    60   ~ 0
+v2
+$Comp
+L R R302
+U 1 1 55B59D0A
+P 7700 2300
+F 0 "R302" V 7780 2300 50  0000 C CNN
+F 1 "10K" V 7707 2301 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 2300 30  0001 C CNN
+F 3 "" H 7700 2300 30  0000 C CNN
+	1    7700 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 1900 0    60   Input ~ 0
+3V
+Wire Wire Line
+	7700 2050 7700 1900
+Wire Wire Line
+	7700 1900 7450 1900
+Wire Wire Line
+	7700 2550 7700 2650
+Connection ~ 7700 2650
 $EndSCHEMATC
