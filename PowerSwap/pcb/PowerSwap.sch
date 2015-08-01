@@ -154,8 +154,6 @@ F 3 "" H 4850 3900 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4750 2850 6300 2850
-Text Notes 6100 2650 0    60   ~ 0
-3.3V up to 800 mA
 Wire Wire Line
 	5550 2850 5550 3050
 Connection ~ 5550 2850

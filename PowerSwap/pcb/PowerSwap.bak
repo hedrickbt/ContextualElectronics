@@ -388,7 +388,7 @@ L R R?
 U 1 1 55BC7CA3
 P 2400 3050
 F 0 "R?" V 2480 3050 50  0000 C CNN
-F 1 "0/NONE" V 2407 3051 50  0000 C CNN
+F 1 "0" V 2407 3051 50  0000 C CNN
 F 2 "" V 2330 3050 30  0000 C CNN
 F 3 "" H 2400 3050 30  0000 C CNN
 F 4 "Value" H 2400 3050 60  0001 C CNN "MPN"
@@ -466,6 +466,8 @@ F 3 "" H 2400 4200 60  0000 C CNN
 	1    2400 4200
 	1    0    0    -1  
 $EndComp
-Text Notes 2250 4250 1    60   ~ 0
+Text Notes 2300 4250 1    60   ~ 0
+May not populate
+Text Notes 2900 3000 2    60   ~ 0
 May not populate
 $EndSCHEMATC
