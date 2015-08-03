@@ -1,8 +1,22 @@
-TODO
-Order parts from Digikey
-Watch http://contextualelectronics.com/power-swap/choosing-between-boost-and-buck-boost/
-Build Motor Encoder board
 
+
+TODO
+Test Motor Driver
+http://contextualelectronics.com/go-go-go/motor-test-code/
+  Test forward : digitalWrite
+  Test reverse : digitalWrite
+  Test pwm for speed : analogWrite
+
+8.1.2015
+Ordered parts from Digikey
+
+??.??.????
+Ordered motor encoder boards from oshpark
+
+
+??.??.????
+Built Motor Encoder board
 
 7.21.2015
-Ordered boards from oshpark
+Ordered motor driver boards from oshpark
+
