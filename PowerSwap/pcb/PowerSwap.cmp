@@ -1,0 +1,122 @@
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 8/3/2015 12:13:38 AM
+
+BeginCmp
+TimeStamp = /55BC58C4;
+Reference = C101;
+ValeurCmp = 4.7/10uf;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC84DC;
+Reference = C102;
+ValeurCmp = 0.1uf;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC5BAF;
+Reference = C103;
+ValeurCmp = 10uf;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC57E7;
+Reference = L101;
+ValeurCmp = INDUCTOR;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC5DDE;
+Reference = P101;
+ValeurCmp = INPUT;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC7112;
+Reference = P102;
+ValeurCmp = TP B4L;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC6DD8;
+Reference = P103;
+ValeurCmp = TP FB;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC7173;
+Reference = P104;
+ValeurCmp = TP AFTL;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC732C;
+Reference = P105;
+ValeurCmp = TP VOUT1;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC795D;
+Reference = P106;
+ValeurCmp = TP VOUT2;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC5CD5;
+Reference = P107;
+ValeurCmp = OUTPUT;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC7CA3;
+Reference = R101;
+ValeurCmp = 0;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC7EEF;
+Reference = R102;
+ValeurCmp = 0;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC80A9;
+Reference = R103;
+ValeurCmp = 0;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC6276;
+Reference = R104;
+ValeurCmp = R;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC62A0;
+Reference = R105;
+ValeurCmp = R;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /55BC574B;
+Reference = U101;
+ValeurCmp = TPS63030;
+IdModule  = ;
+EndCmp
+
+EndListe
