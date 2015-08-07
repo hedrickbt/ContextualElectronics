@@ -1,0 +1,10 @@
+8.7.2015 wip equations
+
+Inductor equations
+3.3v / 0.150A output
+
+buck
+L1 = ( Vin1 - Vout ) * 0.5 * uS/A
+
+boost
+L2 = Vout * 0.5 * uS/A
