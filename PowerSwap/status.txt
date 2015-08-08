@@ -1,6 +1,25 @@
 8.7.2015 wip equations
 
+Resistor Equation
+Within the TPS6303X family there are fixed and adjustable output voltage versions available. To properly
+configure the fixed output voltage devices, the FB pin is used to sense the output voltage. This means that it
+must be connected directly to VOUT. At the adjustable output voltage versions, an external resistor divider is
+used to adjust the output voltage. The resistor divider must be connected between VOUT, FB and GND. When
+the output voltage is regulated properly, the typical value of the voltage at the FB pin is 500mV. The maximum
+recommended value for the output voltage is 5.5V. The current through the resistive divider should be about 100
+times greater than the current into the FB pin. The typical current into the FB pin is 0.01 μA, and the voltage
+across the resistor between FB and GND, R2, is typically 500 mV. Based on those two values, the recommended
+value for R2 should be lower than 500kΩ, in order to set the divider current at 1μA or higher. It is recommended
+to keep the value for this resistor in the range of 200kΩ. From that, the value of the resistor connected between
+VOUT and FB, R1, depending on the needed output voltage (VOUT), can be calculated using Equation 1:
+
+R1 = R2 * (( Vout/Vfb ) - 1 )
+
+
 Inductor equations
+INDUCTOR SELECTION
+To properly configure the TPS6303X devices, an inductor must be connected between pin L1 and pin L2. To
+estimate the inductance value Equation 2 and Equation 3 can be used.
 3.3v / 0.150A output
 
 buck
@@ -8,3 +27,69 @@ L1 = ( Vin1 - Vout ) * 0.5 * uS/A
 
 boost
 L2 = Vout * 0.5 * uS/A
+
+In Equation 2 the minimum inductance value, L1 for step down mode operation is calculated. VIN1 is the
+maximum input voltage. In Equation 3 the minimum inductance, L2 , for boost mode operation is calculated. The
+recommended minimum inductor value is either L1 or L2 whichever is higher. As an example, a suitable inductor
+for generating 3.3V from a Li-Ion battery with a battery voltage range from 2.5V up to 4.2V is 2.2 μH. The
+recommended inductor value range is between 1.5 μH and 4.7 μH. In general, this means that at high voltage
+conversion rates, higher inductor values offer better performance.
+
+With the chosen inductance value, the peak current for the inductor in steady state operation can be calculated.
+Equation 4 shows how to calculate the peak current I1 in step down mode operation and Equation 5 shows how
+to calculate the peak current I2 in boost mode operation.
+
+I1 = Iout/0.8 + (Vout * (Vin1 - Vout))/(2 * Vin1 * f * L)
+
+I2 = ((Vout * Iout)/(0.8 * Vin2)) + ((Vin2 * (Vout - Vin2))/2 * Vout * f * L)
+
+In both equations f is the minimum switching frequency. VIN2 is the minimum input voltage. The critical current
+value for selecting the right inductor is the higher value of I1 and I2 . It also needs to be taken into account that
+load transients and error conditions may cause higher inductor currents. This also needs to be taken into account
+when selecting an appropriate inductor. The following inductor series from different suppliers have been used
+with TPS6303x converters:
+
+...
+
+Output Capacitor
+For the output capacitor, it is recommended to use small ceramic capacitors placed as close as possible to the
+VOUT and PGND pins of the IC. If, for any reason, the application requires the use of large capacitors which can
+not be placed close to the IC, using a smaller ceramic capacitor in parallel to the large one is recommended.
+This small capacitor should be placed as close as possible to the VOUT and PGND pins of the IC.
+To get an estimate of the recommended minimum output capacitance, Equation 6 can be used
+
+Cout = 5 * L * uF/uH
+
+A capacitor with a value in the range of the calculated minimum should be used. This is required to maintain
+control loop stability. There are no additional requirements regarding minimum ESR. There is also no upper limit
+for the output capacitance value. Larger capacitors will cause lower output voltage ripple as well as lower output
+voltage drop during load transients.
+
+
+@ 11:04 in http://contextualelectronics.com/power-swap/inductor-equations/
+
+Buck
+R1 = R2 * (( Vout/Vfb ) - 1 )
+R1 = 200000 * (( 3.3/0.5 ) - 1 )
+R1 = 1.12M or let's go to 1.2M
+
+We want a 1.2M for R2 so...
+1200000 = R2 * (( 3.3/0.5 ) - 1 )
+1200000 = R2 * (( 3.3/0.5 ) - 1 )
+R2 = 214K - let's say 215K
+
+L1 = ( Vin1 - Vout ) * 0.5 * uS/A
+L1 = ( 4.2 - 3.3 ) * 0.5 * uS/A
+
+
+Vin		= 3.0v - 4.2v ( given )
+Vout
+Vfb		= 0.5v ( given )
+R1		= 1.2M
+R2 		= 215K ( 200K given, but re-figured to use 215K )	E6, E12, E24 etc series
+C1 = 4.7uf input
+C2 = 0.1uf bypass
+C3 =   output
+L1
+
+Boost
