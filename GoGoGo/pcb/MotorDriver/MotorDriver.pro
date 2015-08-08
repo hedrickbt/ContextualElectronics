@@ -1,4 +1,4 @@
-update=7/25/2015 9:13:25 AM
+update=8/8/2015 10:19:20 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,16 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=GoGoGo
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60

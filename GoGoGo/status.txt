@@ -1,11 +1,16 @@
 
 
 TODO
-Test Motor Driver
+Build/Test Motor Driver
 http://contextualelectronics.com/go-go-go/motor-test-code/
   Test forward : digitalWrite
   Test reverse : digitalWrite
   Test pwm for speed : analogWrite
+  
+Build/Test Motor Encoder:
+Replace 1k resistor after photodiode to 10k.  Make sure measuring near 5v at the test point when blocked.
+
+Design/Print the encoder wheel
 
 8.1.2015
 Ordered parts from Digikey

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/data/SpiderOak/projects/ContextualElectronics/GoGoGo/pcb/MotorEncoder/MotorEncoder.sch)
-    (date "7/22/2015 10:51:03 PM")
+    (date "8/8/2015 11:18:59 AM")
     (tool "Eeschema (2015-01-29 BZR 5396)-product"))
   (components
     (comp (ref U101)
@@ -41,7 +41,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 55B044E9))
     (comp (ref R102)
-      (value 1K)
+      (value 10K)
       (footprint Resistors_SMD:R_0805_HandSoldering)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
