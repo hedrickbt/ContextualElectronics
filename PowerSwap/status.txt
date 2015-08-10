@@ -1,4 +1,11 @@
-8.7.2015 wip equations
+TODO
+Making The Inductor Footprint
+Making The TPS63030 Footprint
+
+
+
+
+8.7.2015, 8.9.2015 wip equations
 
 Resistor Equation
 Within the TPS6303X family there are fixed and adjustable output voltage versions available. To properly
@@ -78,18 +85,49 @@ We want a 1.2M for R2 so...
 1200000 = R2 * (( 3.3/0.5 ) - 1 )
 R2 = 214K - let's say 215K
 
+Constant = uS/A
 L1 = ( Vin1 - Vout ) * 0.5 * uS/A
 L1 = ( 4.2 - 3.3 ) * 0.5 * uS/A
+L1 = ( 0.9 ) * 0.5 * us/A
+LI = 0.45 * us/A
+
+L2 = Vout * 0.5 * uS/A
+L2 = 3.3 * 0.5 * uS/A
+L2 = 1.65 * uS/A
+
+I1 = Iout/0.8 + (Vout * (Vin1 - Vout))/(2 * Vin1 * f * L)
+I1 = 0.1A/0.8A + (3.3V * (4.2V - 3.3V))/(2 * 4.2V * 2.2mhz * 2.2uh)
+I1 = 0.125A + (3.3 * .9)/(2 * 4.2V * 2.2mhz * 2.2uh)
+I1 = 0.125A + (3.3 * .9)/(2 * 4.2V * 2.2mhz * 2.2uh)
+I1 = 0.125 + (2.97)/(2 * 4.2V * 2200000hz * 0.0000022h)
+I1 = 0.125 + (2.97)/(41.624)
+I1 = 0.19635A
 
 
-Vin		= 3.0v - 4.2v ( given )
-Vout
+I2 = ((Vout * Iout)/(0.8 * Vin2)) + ((Vin2 * (Vout - Vin2))/2 * Vout * f * L)
+I2 = ((3.3 * 0.100)/(0.8 * 3.0)) + ((3.0 * (3.3 - 3.0))/2 * 3.3 * 2.2mhz * 2.2uh)
+I2 = ((3.3 * 0.100)/(0.8 * 3.0)) + ((3.0 * (3.3 - 3.0))/2 * 3.3 * 2200000hz * 0.0000022h)
+I2 = (.33/2.4) + (0.9/31.944)
+I2 = 0.16567A
+
+Cout = 5 * L * uF/uH
+Cout = 5 * 2.2uH * uF/uH
+Cout = 5 * 2.2uF
+Cout = 11uf - call it 10uf
+
+f		= 2.2mhz ( given )
+Iout	= 0.100A ( given )
+Vin		= 4.2v ( given )
+Vin2	= 3.0 ( given )
+Vout	= 3.3v ( given )
 Vfb		= 0.5v ( given )
 R1		= 1.2M
 R2 		= 215K ( 200K given, but re-figured to use 215K )	E6, E12, E24 etc series
-C1 = 4.7uf input
-C2 = 0.1uf bypass
-C3 =   output
-L1
+C1 		= 4.7uf input ( given )
+C2 		= 0.1uf bypass ( given )
+C3 		= 10uf	output
+L 		= 2.2uh - decided to go with based on notes and our values seeming on the low side
+Imax	= 0.196A ( higher of I1/I2 )
 
 Boost
+
