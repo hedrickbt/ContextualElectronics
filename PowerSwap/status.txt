@@ -1,7 +1,10 @@
 TODO
+Layout PCB
+
+
+8.15.2015
 Making The Inductor Footprint
 Making The TPS63030 Footprint
-
 
 
 
