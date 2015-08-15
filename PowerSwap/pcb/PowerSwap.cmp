@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 8/11/2015 7:18:15 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 8/15/2015 3:59:59 PM
 
 BeginCmp
 TimeStamp = /55BC58C4;
@@ -25,7 +25,7 @@ BeginCmp
 TimeStamp = /55BC57E7;
 Reference = L101;
 ValeurCmp = 2.2uh;
-IdModule  = ;
+IdModule  = pcb:LQH3NPN2R2NG0;
 EndCmp
 
 BeginCmp
@@ -116,7 +116,7 @@ BeginCmp
 TimeStamp = /55BC574B;
 Reference = U101;
 ValeurCmp = TPS63030;
-IdModule  = ;
+IdModule  = pcb:SON10_HandSoldered_TPS63030;
 EndCmp
 
 EndListe

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/data/SpiderOak/projects/ContextualElectronics/PowerSwap/pcb/PowerSwap.sch)
-    (date "8/11/2015 7:17:42 PM")
+    (date "8/15/2015 3:58:35 PM")
     (tool "Eeschema (2015-01-29 BZR 5396)-product"))
   (components
     (comp (ref U101)
@@ -102,6 +102,22 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 55BC84DC)))
   (libparts
+    (libpart (lib PowerSwap) (part TPS63030)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) TPS63030))
+      (pins
+        (pin (num 1) (name VOUT) (type input))
+        (pin (num 2) (name L2) (type input))
+        (pin (num 3) (name PGND) (type input))
+        (pin (num 4) (name L1) (type input))
+        (pin (num 5) (name VIN) (type input))
+        (pin (num 6) (name EN) (type input))
+        (pin (num 7) (name PS/SYNC) (type input))
+        (pin (num 8) (name VINA) (type input))
+        (pin (num 9) (name GND) (type input))
+        (pin (num 10) (name FB) (type input))
+        (pin (num 11) (name PowerPAD) (type input))))
     (libpart (lib device) (part C)
       (description "Condensateur non polarise")
       (footprints
@@ -157,30 +173,14 @@
         (field (name Value) CONN_01X02))
       (pins
         (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib PowerSwap) (part TPS63030)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) TPS63030))
-      (pins
-        (pin (num 1) (name VOUT) (type input))
-        (pin (num 2) (name L2) (type input))
-        (pin (num 3) (name PGND) (type input))
-        (pin (num 4) (name L1) (type input))
-        (pin (num 5) (name VIN) (type input))
-        (pin (num 6) (name EN) (type input))
-        (pin (num 7) (name PS/SYNC) (type input))
-        (pin (num 8) (name VINA) (type input))
-        (pin (num 9) (name GND) (type input))
-        (pin (num 10) (name FB) (type input))
-        (pin (num 11) (name PowerPAD) (type input)))))
+        (pin (num 2) (name P2) (type passive)))))
   (libraries
     (library (logical device)
       (uri C:\kicad-winbuilder-3.4\kicad\share\library\device.lib))
-    (library (logical conn)
-      (uri C:\kicad-winbuilder-3.4\kicad\share\library\conn.lib))
     (library (logical PowerSwap)
-      (uri C:\data\SpiderOak\projects\ContextualElectronics\PowerSwap\pcb\PowerSwap.lib)))
+      (uri C:\data\SpiderOak\projects\ContextualElectronics\PowerSwap\pcb\PowerSwap.lib))
+    (library (logical conn)
+      (uri C:\kicad-winbuilder-3.4\kicad\share\library\conn.lib)))
   (nets
     (net (code 1) (name "Net-(P103-Pad1)")
       (node (ref P103) (pin 1))
