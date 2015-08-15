@@ -1,24 +1,31 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 8/15/2015 3:59:59 PM
+Cmp-Mod V01 Created by Cvpcb (2015-01-29 BZR 5396)-product   date = 8/15/2015 5:24:35 PM
 
 BeginCmp
 TimeStamp = /55BC58C4;
 Reference = C101;
 ValeurCmp = 4.7uf;
-IdModule  = ;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC84DC;
 Reference = C102;
 ValeurCmp = 0.1uf;
-IdModule  = ;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC5BAF;
 Reference = C103;
 ValeurCmp = 22uf;
-IdModule  = ;
+IdModule  = Capacitors_SMD:C_1210_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55CFB4F6;
+Reference = C104;
+ValeurCmp = uf;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
@@ -32,84 +39,84 @@ BeginCmp
 TimeStamp = /55BC5DDE;
 Reference = P101;
 ValeurCmp = INPUT;
-IdModule  = ;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC7112;
 Reference = P102;
 ValeurCmp = TP B4L;
-IdModule  = ;
+IdModule  = pcb:TESTPOINT_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC6DD8;
 Reference = P103;
 ValeurCmp = TP FB;
-IdModule  = ;
+IdModule  = pcb:TESTPOINT_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC7173;
 Reference = P104;
 ValeurCmp = TP AFTL;
-IdModule  = ;
+IdModule  = pcb:TESTPOINT_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC732C;
 Reference = P105;
 ValeurCmp = TP VOUT1;
-IdModule  = ;
+IdModule  = pcb:TESTPOINT_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC795D;
 Reference = P106;
 ValeurCmp = TP VOUT2;
-IdModule  = ;
+IdModule  = pcb:TESTPOINT_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC5CD5;
 Reference = P107;
 ValeurCmp = OUTPUT;
-IdModule  = ;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC7CA3;
 Reference = R101;
 ValeurCmp = 0;
-IdModule  = ;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC7EEF;
 Reference = R102;
 ValeurCmp = 0;
-IdModule  = ;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC80A9;
 Reference = R103;
 ValeurCmp = 0;
-IdModule  = ;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC6276;
 Reference = R104;
 ValeurCmp = 1.2M;
-IdModule  = ;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /55BC62A0;
 Reference = R105;
 ValeurCmp = 215K;
-IdModule  = ;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp

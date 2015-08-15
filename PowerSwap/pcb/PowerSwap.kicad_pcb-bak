@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 0 0 0 0)
     (thickness 1.6)
-    (drawings 0)
+    (drawings 1)
     (tracks 0)
     (zones 0)
     (modules 0)
@@ -62,7 +62,7 @@
     (pad_drill 0.6)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -99,6 +99,10 @@
     (via_drill 0.635)
     (uvia_dia 0.508)
     (uvia_drill 0.127)
+  )
+
+  (gr_text v1 (at 269.1 193.01) (layer Eco2.User)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
 
 )
