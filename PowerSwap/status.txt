@@ -1,5 +1,9 @@
 TODO
-Layout PCB
+Finishing watching http://contextualelectronics.com/power-swap/ps-layout/  @ 36:00
+
+
+8.15.2015
+First Layout PCB - complete
 
 
 8.15.2015
