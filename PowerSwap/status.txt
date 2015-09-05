@@ -1,4 +1,66 @@
+//////////////////////////////////////
 TODO
+//////////////////////////////////////
+
+
+//////////////////////////////////////
+DONE
+//////////////////////////////////////
+
+9.5.2015
+Calculating R1 and R2 to determine the output voltage.
+R1 = R2 * ( Vout/Vfb - 1)
+
+Given 
+FB = 0.5v  			( datsheet )
+R1 = ?
+R2 = 200,000 ohm 	( datasheet )
+Vout = 3.3v  		( desired )
+
+R1 = 200,000 * ( 3.3/0.5 - 1)
+R1 = 200,000 * ( 6.6 - 1)
+R1 = 200,000 * 5.6
+R1 = 1,120,000
+R1 = ~1.2M
+
+Given 
+FB = 0.5v  			( datsheet )
+R1 = ?
+R2 = 200,000 ohm 	( datasheet )
+Vout = 5.0v  		( desired )
+
+R1 = 200,000 * ( 5.0/0.5 - 1)
+R1 = 200,000 * ( 10 - 1)
+R1 = 200,000 * 9
+R1 = 1,800,000
+R1 = 1.8M
+
+
+Given - we don't want to change R2, what can we do with R1
+FB = 0.5v  			( datsheet )
+R1 = 1,200,000 ohm 	( desired )
+R2 = ?
+Vout = 5.0v  		( desired )
+
+1,200,000 = R2 * ( 5.0/0.5 - 1)
+1,200,000 = R2 * ( 10 - 1)
+1,200,000 = R2 * 9
+133,333 = R2
+~133K = R2
+
+Given - I only have an available 120K R1, what happens
+FB = 0.5v  			( datsheet )
+R1 = 1,200,000 ohm 	( desired )
+R2 = 200,000 ohm 	( desired )
+Vout = ?	  		
+
+1,200,000 = 200,000 * ( Vout/0.5 - 1)
+10 = Vout/0.5 - 1
+11 = Vout/0.5
+11 * 0.5 = Vout
+5.5 = Vout - This is the maxiumum rating for the part!
+
+
 DONE: Finishing watching http://contextualelectronics.com/power-swap/ps-layout/  @ 50:57
 
 

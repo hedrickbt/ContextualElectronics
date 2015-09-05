@@ -1,12 +1,41 @@
 Contextual Electronics Progress
 
+//////////////////////////////////////////////////////
 TODO
+//////////////////////////////////////////////////////
+9.4.2015
+Watching 
+http://contextualelectronics.com/roll-with-it/power-swap/changing-the-tps63030-output-voltage/
+
+
+9.4.2015
+Assemble powerswap
+Test powerswap
+Make sure to take FLIR
+Look at switching wafeform
+Looking for 3.3v out
+Look at using gabotronics for voltage readings in/out
+Test using a bench power supply for the PS
+Test using the lipo for the PS
+Check for .5v/.5014v at FB? testpoint
+Put a load ( current sink or swim / dc load )
+Build a Powerswap with 5v out - need to change R1? and R2? divider
+https://contextualelectronics.com/topic/participate-testing-the-power-swap/
+https://contextualelectronics.com/topic/testing-the-power-swap/
+https://contextualelectronics.com/topic/battery-input-to-the-power-swap/
+
+9.3.2015
+Read Art of Electronics (AOE) around figure 2.27 for class a amplifiers
+
 8.26.2015  
 EM06 - Embedded
 http://contextualelectronics.com/embedded/trying-out-the-usart-on-the-stm32/
 See if you can write the code for src/MCU/usart2.c
 	May need to consult the STM32(NUCLEO) manual for the USART
 
+//////////////////////////////////////////////////////
+DONE
+//////////////////////////////////////////////////////
 xx.xx.2015
 DBI - OpAmp Chris
 	MCP6401
