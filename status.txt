@@ -3,26 +3,13 @@ Contextual Electronics Progress
 //////////////////////////////////////////////////////
 TODO
 //////////////////////////////////////////////////////
-9.4.2015
-Watching 
-http://contextualelectronics.com/roll-with-it/power-swap/changing-the-tps63030-output-voltage/
+9.12.2015
+Watch
+http://contextualelectronics.com/embedded/em11-serial-communication/
+https://contextualelectronics.com/topic/an-introduction-to-devops-with-eric/
+http://contextualelectronics.com/roll-with-it/loud-mouth/class-a-layout-part-2/
 
 
-9.4.2015
-Assemble powerswap
-Test powerswap
-Make sure to take FLIR
-Look at switching wafeform
-Looking for 3.3v out
-Look at using gabotronics for voltage readings in/out
-Test using a bench power supply for the PS
-Test using the lipo for the PS
-Check for .5v/.5014v at FB? testpoint
-Put a load ( current sink or swim / dc load )
-Build a Powerswap with 5v out - need to change R1? and R2? divider
-https://contextualelectronics.com/topic/participate-testing-the-power-swap/
-https://contextualelectronics.com/topic/testing-the-power-swap/
-https://contextualelectronics.com/topic/battery-input-to-the-power-swap/
 
 9.3.2015
 Read Art of Electronics (AOE) around figure 2.27 for class a amplifiers
@@ -36,6 +23,34 @@ See if you can write the code for src/MCU/usart2.c
 //////////////////////////////////////////////////////
 DONE
 //////////////////////////////////////////////////////
+9.17.2015
+watched https://contextualelectronics.com/topic/class-a-layout-part-1/
+
+9.12.2015
+Test powerswap
+* Make sure to take FLIR
+* Look at switching waveform
+* Look at using gabotronics for voltage readings in/out
+* Test using the lipo for the PS
+* Check for .5v/.5014v at FB? testpoint
+* Put a load ( current sink or swim / dc load )
+* https://contextualelectronics.com/topic/participate-testing-the-power-swap/
+* https://contextualelectronics.com/topic/testing-the-power-swap/
+* https://contextualelectronics.com/topic/battery-input-to-the-power-swap/
+3.3v max output 210mah
+5.5v max output 180mah
+
+
+9.7.2015
+Watched
+http://contextualelectronics.com/embedded/em09-c-data-types-from-an-embedded-point-of-view/
+
+9.5.2015
+Assemble powerswap
+Looking for 3.3v out
+Test using a bench power supply for the PS
+Build a Powerswap with 5v out - need to change R1? and R2? divider
+
 xx.xx.2015
 DBI - OpAmp Chris
 	MCP6401
