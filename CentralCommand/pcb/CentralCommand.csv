@@ -1,0 +1,56 @@
+Title,
+Revision,
+Date,
+Generated,2/28/2016 2:11:46 PM
+Company,
+Comment 1,
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,72
+Total Unique Parts,35
+
+
+
+Ref,Qty,Value,DatasheetLink,Description,MPN,SupplierLink,
+C101 ,1,.1uf, , , , 
+C102 C103 ,2,18pf, , , , 
+C104 C107 ,2,0.1u, , , , 
+C105 C108 ,2,1u, , , , 
+C106 C109 ,2,10u, , , , 
+C205 C206 ,2,10uf, , , , 
+C201 ,1,10nf, , , , 
+C204 C202 ,2,100nf, , , , 
+C203 ,1,4.7uf, , , , 
+C301 C302 ,2,0.1uf, , , , 
+CON201 ,1,USB-MICRO-B,http://portal.fciconnect.com/Comergent//fci/drawing/10118193.pdf, ,10118193-0001LF,https://www.digikey.com/product-search/en?keywords=609-4616-1-ND
+D201 D202 ,2,D_Schottky,http://www.onsemi.com/pub_link/Collateral/MBR0520LT1-D.PDF, ,MBR0520LT1G,http://www.digikey.com/product-search/en?keywords=MBR0520LT1GOSCT-ND
+D203 ,1,LED_GREEN,http://katalog.we-online.de/led/datasheet/150080GS75000.pdf,Green,150080GS75000,https://www.digikey.com/product-search/en?keywords=732-4983-1-ND
+D204 ,1,LED_YELLOW,http://katalog.we-online.de/led/datasheet/150080YS75000.pdf,Yellow,150080YS75000,http://www.digikey.com/product-search/en?keywords=732-4987-1-ND
+D205 ,1,LED_BLUE,http://katalog.we-online.de/led/datasheet/150080BS75000.pdf,Blue,150080BS75000,http://www.digikey.com/product-search/en?keywords=732-4982-1-ND
+FB201 ,1,FILTER, , , , 
+JP201 ,1,JUMPER3, , , , 
+L101 ,1,10uh,http://www.abracon.com/Magnetics/chips/AIML-1206.pdf, ,AIML-1206-100K-T,https://www.digikey.com/product-search/en?keywords=535-11657-1-ND
+P101 P102 ,2,CONN_01X10, , , , 
+P103 P104 ,2,CONN_01X04, , , , 
+P105 P106 P202 P302 ,4,CONN_01X02, , , , 
+P107 P108 P110 P109 ,4,CONN_01X01, , , , 
+P303 ,1,CONN_01X04,http://www.jst-mfg.com/product/pdf/eng/ePH.pdf, ,S4B-PH-K-S(LF)(SN),http://www.digikey.com/product-search/en?keywords=455-1721-ND
+P304 ,1,CONN_01X04,http://www.jst-mfg.com/product/pdf/eng/ePH.pdf, ,S4B-PH-K-S(LF)(SN),http://www.digikey.com/product-search/en?keywords=455-1721-ND
+P301 ,1,CONN_01X06, , , , 
+P305 ,1,CONN_01X03, , , , 
+R201 R203 R205 R207 R202 R301 R302 R305 R310 R311 R313 R312 R309 R308 R307 R306 ,16,0, , , , 
+R208 R209 R211 ,3,270, , , , 
+R204 R206 R210 ,3,NOP, , , , 
+R303 R304 ,2,100k, , , , 
+U101 ,1,STM32F030C8,http://www.st.com/web/en/resource/technical/document/datasheet/DM00088500.pdf, ,STM32F030C8T6,http://www.digikey.com/product-search/en?keywords=497-14043-ND
+U202 ,1,MCP1700T-3302E/TT,http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779, ,MCP1700T-3302E/TT,http://www.digikey.com/product-search/en?keywords=MCP1700T3302ETTCT-ND
+U201 ,1,FT232RQ,http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf, ,FT232RQ-REEL,http://www.digikey.com/product-search/en?keywords=768-1008-1-ND
+U301 U302 ,2,B3F-1020,http://www.components.omron.com/components/web/PDFLIB.nsf/0/D85EBCB9FA436B2485257201007DD56E/$file/B3F_0811.pdf, ,B3F-1020,https://www.digikey.com/product-search/en?keywords=SW402-ND
+Y101 ,1,Crystal,http://www.txccrystal.com/images/pdf/9c-accuracy.pdf, ,9C-8.000MEEJ-T,http://www.digikey.com/product-search/en?keywords=887-1263-1-ND
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated 2/28/2016 2:11:46 PM

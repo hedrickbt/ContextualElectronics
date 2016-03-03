@@ -1,0 +1,17 @@
+
+<html>
+<head>
+	
+	
+	<script type="text/javascript">
+	    var locale = 'en';
+	    var lc = 'active';
+	    var context = '/st-web-ui';
+	    var url2 = '/st-web-ui/active/en/resource/sales_and_marketing/promotional_material/flyer/flstm32.pdf';
+	    var url = context+"/"+lc+"/"+locale+"/"+'errors/page_not_found?url=' + url2;
+	    window.location = url;
+	</script>
+</head>
+<body>
+</body>
+</html>

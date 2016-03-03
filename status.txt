@@ -1,89 +1,449 @@
-Contextual Electronics Progress
+Contextual Electronics Progress 
+ 
+////////////////////////////////////////////////////// 
+TODO 
+////////////////////////////////////////////////////// 
+12.15.2015
+EM11    http://contextualelectronics.com/embedded/em11-serial-communication/ 
+	Scope the serial pins on the dev board using the terminal.bin program.  Press a letter and see the tx/rx
 
-//////////////////////////////////////////////////////
-TODO
-//////////////////////////////////////////////////////
-9.12.2015
-Watch
-http://contextualelectronics.com/embedded/em11-serial-communication/
-https://contextualelectronics.com/topic/an-introduction-to-devops-with-eric/
-http://contextualelectronics.com/roll-with-it/loud-mouth/class-a-layout-part-2/
+10.20.2015 
+RE: http://contextualelectronics.com/roll-with-it/power-swap/looking-at-inductor-waveforms/ 
+    Check the inductor waveforms 
+    Chris was able to get 450mah at 4.49 volts.  I am seeing 210-250mah at 5.5-3.3v 
+ 
+9.12.2015-12.22.2015 
+Watch 
+PS27    https://contextualelectronics.com/roll-with-it/power-swap/finding-a-boost-converter-with-web-bench/ 
+PS28    https://contextualelectronics.com/roll-with-it/power-swap/using-web-bench-data/ 
+PS29    https://contextualelectronics.com/roll-with-it/power-swap/creating-the-powerswap-boost-schematic/ 
+PS30    https://contextualelectronics.com/roll-with-it/power-swap/creating-footprints-for-the-powerswap-boost/ 
+PS31    https://contextualelectronics.com/roll-with-it/power-swap/ps31-powerswap-boost-layout-part-1/ 
+PS32    https://contextualelectronics.com/roll-with-it/power-swap/powerswap-boost-layout-part-2/ 
+PS33	https://contextualelectronics.com/roll-with-it/power-swap/powerswap-boost-layout-part-3/
+PS34	https://contextualelectronics.com/roll-with-it/power-swap/boost-assembly/
+PS35	https://contextualelectronics.com/roll-with-it/power-swap/boost-testing/
+RWI31	https://contextualelectronics.com/roll-with-it/rwi-integration/choosing-a-preliminary-cable/
+RWI32	https://contextualelectronics.com/roll-with-it/rwi-integration/using-interrupts-with-the-encoder/
+GTB123	https://contextualelectronics.com/learning/getting-to-blinky-4-0-part-1-2-3/
+RWI33	https://contextualelectronics.com/roll-with-it/rwi-integration/2015-rwi-recap/
+DB36	https://contextualelectronics.com/roll-with-it/das-blinkinput/the-importance-of-labeling-after-long-absence/
+MISC	https://contextualelectronics.com/learning/generating-bills-of-material-in-kicad-4-0/ 
+CFT10	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/pointers/
+START03	https://contextualelectronics.com/start-here/mind-the-gap/
+RWI34	https://contextualelectronics.com/roll-with-it/rwi-integration/what-info-is-passed-between-boards/
+BOOT01	https://contextualelectronics.com/roll-with-it/bootloader/introduction-to-bootloaders/
+EM50	https://contextualelectronics.com/roll-with-it/embedded/eclipse-project-checkin-to-github/
+CC39	https://contextualelectronics.com/roll-with-it/central-command/testing-the-central-command-board-rev-0-part-1/						
+CC40	https://contextualelectronics.com/roll-with-it/central-command/testing-the-central-command-board-rev-0-part-2/
+CC41	https://contextualelectronics.com/roll-with-it/central-command/participate-testing-the-central-command-crystal/
+CC42	https://contextualelectronics.com/roll-with-it/central-command/testing-the-central-command-crystal/
+LM26	https://contextualelectronics.com/roll-with-it/loud-mouth/creating-the-tda7481lp-footprint/
+CC43	https://contextualelectronics.com/roll-with-it/central-command/chris-assembles-the-cc/
+CC44	https://contextualelectronics.com/roll-with-it/central-command/reviewing-assembled-cc-boards/
+CC45	https://contextualelectronics.com/roll-with-it/central-command/the-lazy-cable-solution/
+CC46	https://contextualelectronics.com/roll-with-it/central-command/participate-porting-over-the-serial-terminal-exercise/
+CC47	https://contextualelectronics.com/roll-with-it/central-command/porting-over-the-serial-terminal-exercise/
+EM51	https://contextualelectronics.com/roll-with-it/embedded/debugging-101/
+LM27	https://contextualelectronics.com/roll-with-it/loud-mouth/initial-lm-component-placement/
+START04	https://contextualelectronics.com/start-here/3-tips-for-success/
+EM52	https://contextualelectronics.com/roll-with-it/embedded/eclipse-packs-plugin/
+EM53	https://contextualelectronics.com/roll-with-it/embedded/embedded-vm-checkup/
+EM54	https://contextualelectronics.com/roll-with-it/embedded/central-command-bootloader-discussion/
+EM55	https://contextualelectronics.com/roll-with-it/embedded/destroying-and-creating-a-vm/
+		
+9.3.2015 
+Read Art of Electronics (AOE) around figure 2.27 for class a amplifiers 
+ 
 
-
-
-9.3.2015
-Read Art of Electronics (AOE) around figure 2.27 for class a amplifiers
-
-8.26.2015  
-EM06 - Embedded
-http://contextualelectronics.com/embedded/trying-out-the-usart-on-the-stm32/
-See if you can write the code for src/MCU/usart2.c
-	May need to consult the STM32(NUCLEO) manual for the USART
-
-//////////////////////////////////////////////////////
-DONE
-//////////////////////////////////////////////////////
-9.17.2015
-watched https://contextualelectronics.com/topic/class-a-layout-part-1/
-
-9.12.2015
-Test powerswap
-* Make sure to take FLIR
-* Look at switching waveform
-* Look at using gabotronics for voltage readings in/out
-* Test using the lipo for the PS
-* Check for .5v/.5014v at FB? testpoint
-* Put a load ( current sink or swim / dc load )
-* https://contextualelectronics.com/topic/participate-testing-the-power-swap/
-* https://contextualelectronics.com/topic/testing-the-power-swap/
-* https://contextualelectronics.com/topic/battery-input-to-the-power-swap/
-3.3v max output 210mah
-5.5v max output 180mah
-
-
-9.7.2015
-Watched
-http://contextualelectronics.com/embedded/em09-c-data-types-from-an-embedded-point-of-view/
-
-9.5.2015
-Assemble powerswap
-Looking for 3.3v out
-Test using a bench power supply for the PS
-Build a Powerswap with 5v out - need to change R1? and R2? divider
-
-xx.xx.2015
-DBI - OpAmp Chris
-	MCP6401
-
-7.20.2015
-GGG Motor Controller - schematic complete
-36 min in http://contextualelectronics.com/courses/go-go-go/blog/the-one-hourish-project/
-
-7.18.2015 PS05
-Potential boost converters
-http://parts.io/detail/96422200/PAM2421AECADJR
-http://parts.io/detail/975449/TPS61071DDCR
-http://www.findchips.com/search/MCP1642
-http://parts.io/detail/3539473/AP6714M10G-13
-
-
-7.18.2015 PS04
-PowerSwap looked at buck boost converters
-http://parts.io/detail/3592241/ADP2503ACPZ-R7
-http://parts.io/detail/1738355/TPS63030DSKT
-http://parts.io/detail/975975/TPS63000DRCR
-
-5.12.2015 
-Watched 7 – Finding the DB photodiode
-Chris' parts
-    http://parts.io/detail/1028197/QSB34GR
-    http://parts.io/detail/2942714/VBPW34SR
-    http://parts.io/detail/7821875/PD15-21B%2FTR8
-    http://parts.io/detail/3733143/VBP104S
-    http://parts.io/detail/100075141/TEMD6200FX01
-
-8 – Calculating the feedback resistor
+ 
+////////////////////////////////////////////////////// 
+DONE 
+////////////////////////////////////////////////////// 
+wip					CC		Digikey order
+						Still need 
+							sma1206 inductor	L101 10uh
+							ferrite 	FB201
+					CC 		Assemble	
+							Note: Need to cross the RX and TX from STM32 to FTDI.  Just use the 0 ohm resistor spot
+								  Also update the schematic
+								  
+					LMD
+						Check big cap dimensions
+						check no/nc switch operation
+						
+3.1.2016
+done				CC38	https://contextualelectronics.com/roll-with-it/central-command/a-macrofab-branch-for-the-central-command/
+wip		26:58		LM25	https://contextualelectronics.com/roll-with-it/loud-mouth/creating-and-associating-most-lm-components/
 
 
+2.29.2016
+done				CC35	https://contextualelectronics.com/roll-with-it/central-command/ron-solder-the-central-command-rev-0-board-part-1/
+done				CC36	https://contextualelectronics.com/roll-with-it/central-command/ronald-solders-the-central-command-rev-0-board-part-2/
+done				CC37	https://contextualelectronics.com/roll-with-it/central-command/ronald-solders-the-central-command-rev-0-board-part-3/
 
 
+2.28.2016
+done				CC29	https://contextualelectronics.com/roll-with-it/central-command/planning-eric-and-ron
+done				CC30	https://contextualelectronics.com/roll-with-it/central-command/updating-fields-and-generating-bom/
+done				CC31	https://contextualelectronics.com/roll-with-it/central-command/ronald-sources-parts-from-farnell-uk-and-adds-html-bom/
+done				CC32	https://contextualelectronics.com/roll-with-it/central-command/alternative-components-for-grove/
+done				CC33	https://contextualelectronics.com/roll-with-it/central-command/programming-cable-assembly-part-1/
+done				CC34	https://contextualelectronics.com/roll-with-it/central-command/programming-cable-assembly-part-2/
+
+2.27.2016
+done				CC		Laying out board v1
+done				CC22	https://contextualelectronics.com/roll-with-it/central-command/adding-a-button/
+done				CC23	https://contextualelectronics.com/roll-with-it/central-command/layout-part-1-layers-and-power/
+done				CC24	https://contextualelectronics.com/roll-with-it/central-command/layout-part-2-ftdi-power/
+done				CC25	https://contextualelectronics.com/roll-with-it/central-command/layout-part-3-connector-moves/
+done				CC26	https://contextualelectronics.com/roll-with-it/central-command/layout-part-4-finishing-connections/
+done				CC27	https://contextualelectronics.com/learning/layout-part-5-labeling-and-drc/
+done				CC28	https://contextualelectronics.com/roll-with-it/central-command/layout-part-6-finishing-cc/
+
+2.22.2016
+done				CC19	https://contextualelectronics.com/roll-with-it/central-command/better-component-placement/
+done				CC20	https://contextualelectronics.com/roll-with-it/central-command/daisy-chained-connectors-2/
+done				CC21	https://contextualelectronics.com/roll-with-it/central-command/participate-starting-layout/
+
+2.21.2016
+done				CC18	https://contextualelectronics.com/roll-with-it/central-command/associating-footprints/
+
+2.20.2016
+done				CC17	https://contextualelectronics.com/roll-with-it/central-command/adding-headers/
+
+
+2.18.2016
+done				CC16	https://contextualelectronics.com/roll-with-it/central-command/finishing-the-ft232rq-addition/
+done			LM extra 	http://contextualelectronics.com/roll-with-it/loud-mouth/testing-the-class-a-amplifier/ 
+	Test audio signal
+	Test with speaker
+
+2.17.2016
+done				CC15	https://contextualelectronics.com/roll-with-it/central-command/adding-usb/
+
+2.16.2016
+done				CC14	https://contextualelectronics.com/roll-with-it/central-command/investigating-non-gpio-critical-pins/
+
+
+2.15.2016
+done				LM10    http://contextualelectronics.com/roll-with-it/loud-mouth/assembling-the-loud-mouth-class-a-board/ 
+done				LM11    http://contextualelectronics.com/roll-with-it/loud-mouth/testing-the-class-a-amplifier/ 
+
+2.11.2016
+done				CC12	https://contextualelectronics.com/roll-with-it/central-command/starting-the-central-command-layout/
+done				CC13	https://contextualelectronics.com/roll-with-it/central-command/finding-a-crystal-for-the-central-command/
+
+2.10.2016
+done				CC10    https://contextualelectronics.com/roll-with-it/central-command/choosing-pin-functions-for-the-stm32/ 
+	I2C - 32:PA11 I2C_SCL, 33:PA12 I2C_SDA  ( AF5 )
+	Debug - 34:PA13 SWDIO, 37:PA14 SWCLK ( AF 0 )
+	SPI - 38:PA15 SPI1_NSS, 39:PB3 SPI1_SCK, 40:PB4 SPI1_MISO, 41:PB5 SPI1_MOSI ( AF0 )
+	Clock out - 20:PA8 MCO ( AF0 )
+	usart1 - 42:PB6 USART1_TX, 43:PB6 USART1_RX ( AF0 )
+	usart2 - 12:PA2 USART2_TX, 13:PA3 USART2_RX ( AF1 )  *only on C8 not C6
+	I/R out - 46:PB9 IR_OUT ( AF0 )
+	I2C - 35:PF6 I2C1_SCL, 36:PF I2C1_SDA  ( AF? )
+	Wakeup 1 - 10:PA0 WKUP1
+	ADC in 1 - 11:PA1 ADC_IN1
+	ADC in 8 - 18:PB0 ADC_IN8
+	ADC in 9 - 19:PB1 ADC_IN9
+
+done				CC11    https://contextualelectronics.com/roll-with-it/central-command/claiming-adc-pins-on-the-stm32/ 
+
+2.9.2016
+done				LM24	https://contextualelectronics.com/roll-with-it/loud-mouth/choosing-an-initial-lm-speaker/
+done						LM-AD	Digikey Order for LMA, LMD, LMD_bth
+done				CC06	http://contextualelectronics.com/roll-with-it/central-command/finalizing-the-initial-part-number/ 
+done				CC07    http://contextualelectronics.com/roll-with-it/central-command/creating-stm32-symbol-pins/ 
+done				CC08    http://contextualelectronics.com/roll-with-it/central-command/finishing-the-stm32-symbol/ 
+done				CC09    https://contextualelectronics.com/roll-with-it/central-command/figuring-out-power-for-the-stm32/ 
+
+
+2.8.2016
+done				LM23	https://contextualelectronics.com/roll-with-it/loud-mouth/choosing-lm-parts/
+
+2.7.2016
+done				LM22	https://contextualelectronics.com/roll-with-it/loud-mouth/catching-lm-erc-errors/	
+
+2.6.2016
+done				LM19	https://contextualelectronics.com/roll-with-it/loud-mouth/participate-finishing-the-lm-schematic/
+done				LM20	https://contextualelectronics.com/roll-with-it/loud-mouth/reviewing-the-tda7491lp-datasheet/
+done				LM21	https://contextualelectronics.com/roll-with-it/loud-mouth/creating-initial-lm-application-schematic/
+	Note to Chris:  Switches for mute and standby look like they need to pull low...
+					MCP1700T - looks like pins aren't connected
+					MCP1700T - Since we aren't all following the class in the same order, we may not have symbols from other projects
+	
+2.4.2016
+done 				LM18	https://contextualelectronics.com/roll-with-it/loud-mouth/starting-the-lm-schematic/
+	http://www.digikey.com/product-detail/en/TDA7491LP13TR/497-11056-1-ND/2571081
+	don't forget pin 37 for exposed pad
+
+
+2.3.2016
+done				LM15	https://contextualelectronics.com/roll-with-it/loud-mouth/using-app-notes-teardowns/
+done				LM16	https://contextualelectronics.com/roll-with-it/loud-mouth/what-is-filtering/
+done				LM17	https://contextualelectronics.com/roll-with-it/loud-mouth/using-eval-board-listings/
+
+
+2.1.2016
+done				LM13	https://contextualelectronics.com/roll-with-it/loud-mouth/participate-class-d-amplifier-investigation/
+done				LM14	https://contextualelectronics.com/roll-with-it/loud-mouth/class-d-amplifier-investigation/
+
+1.31.2016
+done				LM06    http://contextualelectronics.com/roll-with-it/loud-mouth/participate-class-a-layout/ 
+done				LM07    http://contextualelectronics.com/roll-with-it/loud-mouth/class-a-layout-part-1/ 
+done				LM08    http://contextualelectronics.com/roll-with-it/loud-mouth/class-a-layout-part-2/ 
+done				LM09    http://contextualelectronics.com/roll-with-it/loud-mouth/class-b-vs-class-ab-simulation/ 
+done				LM10    http://contextualelectronics.com/roll-with-it/loud-mouth/assembling-the-loud-mouth-class-a-board/ 
+done				LM11    http://contextualelectronics.com/roll-with-it/loud-mouth/testing-the-class-a-amplifier/ 
+done				LM12	https://contextualelectronics.com/roll-with-it/loud-mouth/class-d-amplifier-sketchplanation/
+done				LM-A	OshPark Order
+
+
+1.30.2016
+done				EM41	https://contextualelectronics.com/roll-with-it/embedded/getting-to-blinky-with-the-freedom-board/
+done				EM43	https://contextualelectronics.com/roll-with-it/embedded/i2c-introduction/	
+done				EM44	https://contextualelectronics.com/roll-with-it/embedded/spi-introduction/
+done				EM48	https://contextualelectronics.com/roll-with-it/embedded/virtualbox-environment-updates/
+done				EM49	https://contextualelectronics.com/roll-with-it/embedded/em49-tdd-introduction/
+
+1.26.2016
+Worked on EM41, EM43, EM44
+
+1.25.2016
+done				EM46	https://contextualelectronics.com/roll-with-it/embedded/terminal-program-part-3-coding-the-parser-and-testing/
+done				EM47	https://contextualelectronics.com/roll-with-it/embedded/terminal-program-part-4-coding-the-commands-and-more-testing/
+
+1.24.2015
+done				EM38	https://contextualelectronics.com/roll-with-it/embedded/serial-terminal-program-code-design-part-1/	
+done				EM39	https://contextualelectronics.com/roll-with-it/embedded/participate-serial-terminal-program-code-design-part-2/
+done				EM40	https://contextualelectronics.com/roll-with-it/embedded/serial-terminal-program-code-design-part-2/
+done				EM42	https://contextualelectronics.com/roll-with-it/embedded/terminal-program-part-1/
+done				EM45	https://contextualelectronics.com/roll-with-it/embedded/terminal-program-part-2-data-structure/
+
+
+1.23.2016
+done				EM32	https://contextualelectronics.com/roll-with-it/embedded/creating-and-generating-doxygen-documentation-for-usart-code/
+done				EM33	https://contextualelectronics.com/roll-with-it/embedded/updating-the-serial-code-to-use-the-interrupt-and-fifo-buffer-part-1/
+	https://github.com/ContextualElectronics/Embedded   a802093
+done 				EM36	https://contextualelectronics.com/roll-with-it/embedded/updating-the-serial-code-to-use-the-interrupt-and-fifo-buffer-part-2/
+	https://github.com/ContextualElectronics/Embedded	2dda7fb
+done				EM37	https://contextualelectronics.com/roll-with-it/embedded/updating-the-serial-code-to-use-the-interrupt-and-fifo-buffer-part-3/
+	https://github.com/ContextualElectronics/Embedded	0092de9
+done				EM34	https://contextualelectronics.com/roll-with-it/embedded/pwm-with-timers/
+done				EM35	https://contextualelectronics.com/roll-with-it/embedded/pwm-prescaler-period/
+
+	
+1.22.2016
+skipd				EM30	https://contextualelectronics.com/roll-with-it/embedded/participate-fifo-read-code/
+done				EM31	https://contextualelectronics.com/roll-with-it/embedded/participate-creating-and-generating-doxygen-documentation-for-usart-code/
+	https://github.com/ContextualElectronics/Embedded   dba6c26
+	
+1.21.2016
+done				EM28    https://contextualelectronics.com/roll-with-it/embedded/fifo-write-code/
+	https://github.com/ContextualElectronics/Embedded   979d025
+done				EM29    https://contextualelectronics.com/roll-with-it/embedded/fifo-read-code/
+	https://github.com/ContextualElectronics/Embedded   6f14806
+
+1.20.2016
+done				EM27    https://contextualelectronics.com/roll-with-it/embedded/fifo-code-design/
+
+1.19.2016
+done				EM25	https://contextualelectronics.com/roll-with-it/embedded/reviewing-tidying-and-testing-the-usart-driver-part-2/
+	Continued in the vagrant/data/ContextualElectronics/EM24 folder
+done				EM26    https://contextualelectronics.com/roll-with-it/embedded/participate-fifo-code-design/
+
+
+1.18.2016
+done				EM24    https://contextualelectronics.com/roll-with-it/embedded/reviewing-tidying-and-testing-the-usart-driver-part-1/
+	https://github.com/ContextualElectronics/Embedded   74058cb
+done				EM23    https://contextualelectronics.com/roll-with-it/embedded/intro-to-interrupts-timers/
+done				EM22    https://contextualelectronics.com/roll-with-it/embedded/how-an-interrupt-and-a-fifo-buffer-will-improve-the-serial-interface/
+done				EM21    https://contextualelectronics.com/roll-with-it/embedded/handling-and-testing-the-serial-receive-errors-flags/
+	sudo apt-get install meld
+	https://github.com/ContextualElectronics/Embedded   0775682
+
+	
+1.17.2016
+done				EM20    http://contextualelectronics.com/roll-with-it/embedded/reviewing-the-usart-driver-code/ 
+
+
+1.16.2016
+done				EM19    http://contextualelectronics.com/learning/em20-using-gogogo-to-fire-external-interrupt/ 
+
+
+1.12.2016
+done				CSOS55	http://contextualelectronics.com/roll-with-it/current-sink-or-swim/starting-v2-for-the-csos/ 
+
+1.9.2016
+done				CFT05	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/c-fundamental-array/
+done				CFT06	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/c-fundamental-enum/
+done				CFT07	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/c-fundamental-precedence/	
+done				CFT08	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/c-fundamental-operators/
+done				CFT09	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/conditional-branching-and-looping/
+
+1.7.2016
+done				CFT02	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/c-fundamental-union-typedef-and-struct/
+done				CFT03	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/practical-using-union-typedef-struct/
+done				CFT04	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/c-code-structure/
+
+1.5.2016
+done				CFT01	https://contextualelectronics.com/software-tutorials/c-fundamental-tutorial/em09-c-data-types-from-an-embedded-point-of-view/
+
+1.4.2016
+done				EM17    http://contextualelectronics.com/roll-with-it/embedded/participate-receiving-serial-data/ 
+done				EM18    http://contextualelectronics.com/roll-with-it/embedded/receiving-serial-data/ 
+
+1.2.2016
+done				EM14    http://contextualelectronics.com/roll-with-it/embedded/em15-using-gogogo-with-gpio-input/ 
+done				EM15    http://contextualelectronics.com/roll-with-it/embedded/participate-transmitting-serial-data-part-3/ 
+done				EM16    http://contextualelectronics.com/roll-with-it/embedded/transmitting-serial-data-part-3/ 
+
+12.30.2015
+done				EM12	https://contextualelectronics.com/roll-with-it/embedded/em12-transmitting-serial-data-part-1/
+done				EM13	https://contextualelectronics.com/roll-with-it/embedded/em13-transmitting-serial-data-part-2/
+
+12.29.2015
+watchng	1:06:22		EM12	https://contextualelectronics.com/roll-with-it/embedded/em12-transmitting-serial-data-part-1/
+
+12.22.2015
+watchng	39:05		EM11	https://contextualelectronics.com/roll-with-it/embedded/em12-transmitting-serial-data-part-1/
+watchng	7:09		EM12	https://contextualelectronics.com/roll-with-it/embedded/em13-transmitting-serial-data-part-2/
+
+12.17.2015
+worked	EM05	https://contextualelectronics.com/roll-with-it/embedded/getting-to-blinky-with-stm32/
+
+Important:
+Debug Configuration | GDB OpenOCD Debugging | Debugger | Executable | Variables
+	OpenOCD Path | Edit Variables
+	OpenOCD Path: /home/vagrant/openocd/0.9.0-201505190955/bin
+	OK | OK | Cancel
+Make sure the executable still is: ${openocd_path}/${openocd_executable}
+Config Options: -s /home/vagrant/openocd/0.9.0-201505190955/scripts -f board/st_nucleo_f0.cfg
+
+Project | Properties | C/C++ Build | Settings | Configurations All | Post build steps
+	Command: ${cross_prefix}objcopy -O srec ${ProjName}.${BuildArtifactFileExt} ${ProjName}.s19 ; ${cross_prefix}objcopy -O binary ${ProjName}.${BuildArtifactFileExt} ${ProjName}.bin
+	Description: Generate Binary Format
+
+ldscripts/mem.ld
+	FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 64K
+	The above tells us the address to use when flashing
+		cd /home/vagrant/workspace/blinky
+		st-flash  write ./Release/blinky.bin 0x08000000
+
+12.15.2015
+watched	EM11    http://contextualelectronics.com/embedded/em11-serial-communication/ 
+	* Nucleo F030R8
+		* http://www.st.com/st-web-ui/static/active/en/resource/technical/document/user_manual/DM00105823.pdf
+		* http://www.st.com/st-web-ui/static/active/en/resource/technical/document/user_manual/DM00105928.pdf
+	* Freewave software - see oscope on computer screen...
+		* http://www.colorado.edu/physics/phys4430/phys4430_fa15/Useful%20Cheat%20Sheets/Interfacing%20Rigol%20DS1052%20scopes%20with%20a%20computer.pdf
+			* http://www.ni.com/visa/
+			* http://www.rigolna.com/products/digital-oscilloscopes/ds1000e/ds1052e/
+			* http://www.rigolna.com/download/118/
+watchng	EM12    http://contextualelectronics.com/embedded/em12-transmitting-serial-data-part-1/ 17:00
+		
+
+11.10.2015
+watched	RWI28    http://contextualelectronics.com/roll-with-it/rwi-integration/troubleshooting-the-arduino/ 
+watched	GGG33	https://contextualelectronics.com/roll-with-it/go-go-go/assembling-gogogo-motor-driver-rev-2/
+watched	GGG34	https://contextualelectronics.com/roll-with-it/go-go-go/testing-gogogo-motor-driver-rev-2/
+
+11.6.2015 
+watched	RWI27    http://contextualelectronics.com/roll-with-it/rwi-integration/reviewing-the-50-kindle-fire-tablet/ 
+ 
+11.3.2015 
+watched	GGG32    http://contextualelectronics.com/roll-with-it/go-go-go/untented-vias/ 
+watched	RWI25    http://contextualelectronics.com/roll-with-it/rwi-integration/hot-glue-and-daisy-chained-power/ 
+watched	RWI26    http://contextualelectronics.com/roll-with-it/rwi-integration/the-importance-of-strain-relief/ 
+ 
+10.27.2015 
+watched    EM14    http://contextualelectronics.com/embedded/em14-overview-of-cmsis/ 
+watched    GGG30    http://contextualelectronics.com/roll-with-it/go-go-go/redoing-the-motor-driver-part-1/ 
+watched    GGG31    http://contextualelectronics.com/roll-with-it/go-go-go/redoing-the-motor-driver-part-2/ 
+ 
+10.20.2015 
+watched PS26    http://contextualelectronics.com/roll-with-it/power-swap/looking-at-inductor-waveforms/ 
+    Chris was able to get 450mah 
+watched    RWI23    http://contextualelectronics.com/roll-with-it/rwi-integration/installing-motor-encoders-and-disks/ 
+watched    GGG29    http://contextualelectronics.com/roll-with-it/go-go-go/scoping-the-motor-encoders/ 
+watched    RWI24    http://contextualelectronics.com/roll-with-it/rwi-integration/considering-a-low-cost-tablet/ 
+watched    CC05    http://contextualelectronics.com/roll-with-it/central-command/comparing-f030-and-f031-parts/ 
+ 
+10.13.2015 
+watched    CC04    http://contextualelectronics.com/roll-with-it/central-command/embedded-considerations-for-choosing-a-micro-part-1/ 
+ 
+10.6.2015 
+watched START01    http://contextualelectronics.com/start-here/the-background-and-philosophy-of-ce/ 
+watched START02    http://contextualelectronics.com/start-here/chronological-or-module-based-order/ 
+watched CC01     http://contextualelectronics.com/roll-with-it/central-command/introduction-to-central-command/ 
+watched CC02    http://contextualelectronics.com/roll-with-it/central-command/reviewing-the-nucleo-schematic/ 
+watched CC03    http://contextualelectronics.com/roll-with-it/central-command/viewing-datasheets-and-decoding-part-numbers/ 
+ 
+9.29.2015 
+watched    http://contextualelectronics.com/topic/an-introduction-to-devops-with-eric/ 
+ 
+9.22.2015 
+http://contextualelectronics.com/roll-with-it/loud-mouth/class-a-layout-part-2/ 
+ 
+9.17.2015 
+watched https://contextualelectronics.com/topic/class-a-layout-part-1/ 
+ 
+9.12.2015 
+Test powerswap 
+* Make sure to take FLIR 
+* Look at switching waveform 
+* Look at using gabotronics for voltage readings in/out 
+* Test using the lipo for the PS 
+* Check for .5v/.5014v at FB? testpoint 
+* Put a load ( current sink or swim / dc load ) 
+* https://contextualelectronics.com/topic/participate-testing-the-power-swap/ 
+* https://contextualelectronics.com/topic/testing-the-power-swap/ 
+* https://contextualelectronics.com/topic/battery-input-to-the-power-swap/ 
+3.3v max output 210mah 
+5.5v max output 180mah 
+ 
+ 
+9.7.2015 
+Watched 
+http://contextualelectronics.com/embedded/em09-c-data-types-from-an-embedded-point-of-view/ 
+ 
+9.5.2015 
+Assemble powerswap 
+Looking for 3.3v out 
+Test using a bench power supply for the PS 
+Build a Powerswap with 5v out - need to change R1? and R2? divider 
+ 
+xx.xx.2015 
+DBI - OpAmp Chris 
+    MCP6401 
+ 
+7.20.2015 
+GGG Motor Controller - schematic complete 
+36 min in http://contextualelectronics.com/courses/go-go-go/blog/the-one-hourish-project/ 
+ 
+7.18.2015 PS05 
+Potential boost converters 
+http://parts.io/detail/96422200/PAM2421AECADJR 
+http://parts.io/detail/975449/TPS61071DDCR 
+http://www.findchips.com/search/MCP1642 
+http://parts.io/detail/3539473/AP6714M10G-13 
+ 
+ 
+7.18.2015 PS04 
+PowerSwap looked at buck boost converters 
+http://parts.io/detail/3592241/ADP2503ACPZ-R7 
+http://parts.io/detail/1738355/TPS63030DSKT 
+http://parts.io/detail/975975/TPS63000DRCR 
+ 
+5.12.2015  
+Watched 7 \96 Finding the DB photodiode 
+Chris' parts 
+    http://parts.io/detail/1028197/QSB34GR 
+    http://parts.io/detail/2942714/VBPW34SR 
+    http://parts.io/detail/7821875/PD15-21B%2FTR8 
+    http://parts.io/detail/3733143/VBP104S 
+    http://parts.io/detail/100075141/TEMD6200FX01 
+ 
+8 \96 Calculating the feedback resistor

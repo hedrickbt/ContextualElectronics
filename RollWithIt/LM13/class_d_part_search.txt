@@ -1,0 +1,13 @@
+Size of circuit
+Cost
+	Inductors and Caps can add up
+	FETS may be internal or external
+Mobile phone is probably a teeny tiny package
+Power - how loud can it get?
+
+Input:		up to 5v ( 4.5v - 14.4v )
+Output:		2-4 watts( 6w @ 8 ohm ).  2-4 watt seemed to want 3 ohm.
+channels:	stereo ( stereo )
+package:	soic/ssop/tsop ( 28-TSSOP )
+part:		TPA3144D2 http://www.ti.com/lit/ds/symlink/tpa3144d2.pdf 
+cost:		part = 3.07$, 2x1uf, 2x0.22uf, 6x1nf, 2x100nf, 2x100uf, 4xFB
